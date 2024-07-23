@@ -58,3 +58,14 @@
     }
   }
 }
+
+//---DARK MODE
+
+[data-bs-theme="dark"] {
+    .call {
+      color: $black;
+      strong {
+        color: $black;
+      }
+    }
+}

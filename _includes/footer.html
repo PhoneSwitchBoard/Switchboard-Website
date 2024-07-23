@@ -8,7 +8,11 @@
             {% assign footermenu = site.data.menus.footer | sort: 'weight'  %}
             {% for item in footermenu %}
             <li class="{% if item.url == page.url %}active{% endif %}">
-              <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+              {% if item.icon %}
+                <a href="{{ item.url | relative_url }}" id="{% if item.id %}{{ item.id }}{% endif %}"><i class="{{ item.icon }}"></i>{{ item.name }}</a>
+              {% else %}
+                <a href="{{ item.url | relative_url }}" id="{% if item.id %}{{ item.id }}{% endif %}">{{ item.name }}</a>
+              {% endif %}
             </li>
             {% endfor %}
           </ul>

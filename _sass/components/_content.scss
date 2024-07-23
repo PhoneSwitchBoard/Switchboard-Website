@@ -91,3 +91,16 @@
     border-left: .25em solid $secondary;
   }
 }
+
+//---DARK MODE
+
+[data-bs-theme="dark"] {
+    .content {
+      p {
+        color: $gray-300;
+      }
+      li {
+        color: $gray-300;
+      }
+    }
+}

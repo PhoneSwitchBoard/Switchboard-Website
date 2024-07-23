@@ -1,27 +1,30 @@
 [
   {
-    "title": "Free Consultation",
-    "description": "New clients receive an obligation free consultation.",
+    "title": "10 Day Trial",
+    "url": "https://startcloud.com/registration",
+    "description": "Use Switchboard Cloud for 10 days (4 users).",
     "image": {
-      "url": "images/features/noun_branding_1885335.svg",
+      "url": "images/features/trial_icon.png",
       "width": 80,
       "height": 80
     }
   },
   {
-    "title": "Certified Accountants",
-    "description": "All members of our team are certified accountants.",
+    "title": "Deploy",
+    "url": "https://startcloud.com/",
+    "description": "Be the owner of your own instance of the phone system. You can access it through a web interface.",
     "image": {
-      "url": "images/features/noun_The Process_1885341.svg",
+      "url": "images/features/deploy_icon.png",
       "width": 80,
       "height": 80
     }
   },
   {
-    "title": "Tax Compliance",
-    "description": "We stay up to date on the latest changes to the tax code.",
+    "title": "Access your Instance",
+    "url": "https://startcloud.com/login",
+    "description": "Access the web interface of your own Telephone System instance.",
     "image": {
-      "url": "images/features/noun_3d modeling_1885342.svg",
+      "url": "images/features/access_icon.png",
       "width": 80,
       "height": 80
     }

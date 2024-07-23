@@ -41,3 +41,14 @@ ol {
     margin: 0;
   }
 }
+
+//---DARK MODE
+
+[data-bs-theme="dark"] {
+    p {
+      line-height: 26px;
+      color: $gray-300;
+      font-family: $font-family-base;
+      margin-bottom: 20px;
+    }
+}

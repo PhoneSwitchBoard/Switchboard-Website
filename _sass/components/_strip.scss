@@ -54,3 +54,15 @@
 .strip-bg-cover {
   background-size: cover;
 }
+
+//---DARK MODE
+
+[data-bs-theme="dark"] {
+    .strip {
+      background: $gray-800;
+      background-repeat: no-repeat;
+    }
+    .strip-grey {
+      background-color: $gray-800;
+    }
+}

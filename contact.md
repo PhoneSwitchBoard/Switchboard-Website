@@ -4,13 +4,18 @@ layout: contact
 description: Contact
 ---
 
-Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae crimen habet Priamum nec.
+1658 N Milwaukee Ave<br>
+Ste B PMB 4574<br>
+Chicago, IL 60647
 
-| Day       | Opening Hours   |
-| --------- | --------------- |
-| Tuesday   | 8:30am - 5:00pm |
-| Wednesday | 8:30am - 5:00pm |
-| Thursday  | 8:30am - 5:00pm |
-| Friday    | 8:30am - 5:00pm |
-| Saturday  | 10:am - 4:00pm  |
-| Saturday  | Closed          |
+
+<table class="table table-bordered table-striped text-center">
+	<tr><th>Day</th><th>Opening Hours</th></tr>
+	<tr><td>Monday</td><td>9:00am - 5:00pm</td></tr>
+	<tr><td>Tuesday</td><td>9:00am - 5:00pm</td></tr>
+	<tr><td>Wednesday</td><td>9:00am - 5:00pm</td></tr>
+	<tr><td>Thursday</td><td>9:00am - 5:00pm</td></tr>
+	<tr><td>Friday</td><td>9:00am - 5:00pm</td></tr>
+	<tr><td>Saturday</td><td>Closed</td></tr>
+	<tr><td>Sunday</td><td>Closed</td></tr>
+</table>

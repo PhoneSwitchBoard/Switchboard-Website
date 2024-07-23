@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class="container-max-width pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-3 sidebar">
+        {% include tree.html id="sidenav-desktop" tree=site.data.menu %}
+    </div>
+    <div class="col-9 post-menu-content">
+        {{ content }}
+    </div>
+  </div>
+</div>

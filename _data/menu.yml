@@ -1,0 +1,68 @@
+- title: "Switchboard Cloud"
+  link: /docs/
+  subtree:
+    - title: "Launch an Instance"
+      link: /docs/startcloud/before_launch
+      subtree:
+        - title: "First steps"
+          link: /docs/startcloud/first_steps
+
+        - title: "Cloud Providers"
+          link: /docs/startcloud/cloud_providers
+
+        - title: "SSH Keys"
+          link: /docs/startcloud/ssh_key
+
+        - title: "Integrations"
+          link: /docs/startcloud/integrations
+          subtree:
+          - title: "Twilio Connect"
+            link: /docs/startcloud/twilio
+          - title: "Microsoft 365"
+            link: /docs/startcloud/microsoft
+
+        - title: "Launch Switchboard Cloud Instance"
+          link: /docs/startcloud/launch
+
+    - title: "Start using Switchboard Cloud"
+      link: /docs/switchboard/sign_in
+      subtree:
+
+          - title: "Interface Configuration"
+            link: /docs/switchboard/interface_config
+
+          - title: "Queues"
+            link: /docs/switchboard/queues
+
+          - title: "Agents and Extensions"
+            link: /docs/switchboard/extensions
+
+          - title: "Set Up VoIP Phones"
+            link: /docs/switchboard/phone_config
+
+          - title: "Recordings"
+            link: /docs/switchboard/recordings
+
+          - title: "Call Records"
+            link: /docs/switchboard/call_records
+
+          - title: "SIP Trunks"
+            link: /docs/switchboard/trunks
+            subtree:
+            - title: "Inbound Routes"
+              link: /docs/switchboard/inbound_routes
+
+            - title: "Outbound Routes"
+              link: /docs/switchboard/outbound_routes
+
+          - title: "Voicemails"
+            link: /docs/switchboard/voicemails
+
+          - title: "Conferences"
+            link: /docs/switchboard/conferences
+
+          - title: "Internationalization"
+            link: /docs/switchboard/i18n
+
+          - title: "Competitors"
+            link: /docs/switchboard/competitors

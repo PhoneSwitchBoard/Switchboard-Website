@@ -5,83 +5,36 @@ description: About
 bodyClass: page-about
 ---
 
-Lorem markdownum aequalis strigis. _Saetigeri iubeas_, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.
+# Switchboard Cloud Phone System
 
-![Accounting Services](/images/thom-holmes-Lrfw0U_o9I0-unsplash.jpg)
+> A Phone System to manage call queues for customer service in your company and keep audio records of all your business calls.
 
-# Objectives
 
-Financial accounting and financial reporting are often used as synonyms.
+![Customer Service](/images/voip_phone.jpg)
 
-1. According to International Financial Reporting Standards: the objective of financial reporting is:
-2. To provide financial information that is useful to existing and potential investors, lenders and other creditors in making decisions about providing resources to the reporting entity.
-3. According to the European Accounting Association:
 
-## Relevance
+**Switchboard Cloud** is a web phone interface that allows you to manage incoming and outgoing calls for the staff of a company. It uses Voice over Internet Protocol (VoIP) technology to manage telephone calls over the Internet.
 
-Relevance is the capacity of the financial information to influence the decision of its users. The ingredients of relevance are the predictive value and confirmatory value. Materiality is a sub-quality of relevance.
+**Switchboard Cloud** works with [Asterisk](https://www.asterisk.org/), a private branch exchange (PBX), so it connects a certain number of communication terminals, such as telephones or fax machines, to each other and to the public telephone network.
 
-> The ingredients of relevance are the predictive value and confirmatory value.
+With **Switchboard Cloud**, people in all departments of a company can stay connected, handling calls from different offices as local calls. It will be easy for operators to keep track of the calls they make, having the conversations recorded for reference.
 
-Information is considered material if its omission or misstatement could influence the economic decisions of users taken on the basis of the financial statements.
+**Switchboard Cloud** has complete features of a phone system, such as an **IVR**, call **queues** for customer service, call **recordings**, **call notes**, **voice messages**, voice **conferencing**, you can use your mobile phone as an extension, among others.
 
-## Faithful Representation
+If you want to know more about **Switchboard Cloud** Phone System, please contact Sales at [STARTcloud, Inc.][startcloud-contactus]
 
-Faithful representation means that the actual effects of the transactions shall be properly accounted for and reported in the financial statements. The words and numbers must match what really happened in the transaction. The ingredients of faithful representation are completeness, neutrality and free from error.
+[startcloud-contactus]: https://startcloud.com/contact-us.html
 
-## Enhancing Qualitative Characteristics
 
-### Verifiability
+## About STARTcloud
 
-Verifiability implies consensus between the different knowledgeable and independent users of financial information. Such information must be supported by sufficient evidence to follow the principle of objectivity.
 
-### Comparability
+> **STARTcloud** is an Application Marketplace tailored for deploying software solutions like **Switchboard Cloud** across major cloud platforms such as _AWS_ and _Azure_.
 
-Comparability is the uniform application of accounting methods across entities in the same industry. The principle of consistency is under comparability. Consistency is the uniform application of accounting across points in time within an entity.
 
-### Understandability
+![VoIP Phone PBX](/images/support_agent.jpg)
 
-Understandability means that accounting reports should be expressed as clearly as possible and should be understood by those to whom the information is relevant.
-Timeliness: Timeliness implies that financial information must be presented to the users before a decision is to be made.
 
----
+**STARTcloud** simplifies the deployment process, allowing you to swiftly build, operate, access and oversee your **Switchboard Cloud** instance while retaining full control over your data.
 
-## Statement of cash flows
-
-The statement of cash flows considers the inputs and outputs in concrete cash within a stated period. The general template of a cash flow statement is as follows: Cash Inflow - Cash Outflow + Opening Balance = Closing Balance
-
-| Cash Inflow | Outflow   | Opening Balance |
-| ----------- | --------- | --------------- |
-| _Monday_    | `Tuesday` | **Wednesday**   |
-| 1           | 2         | 3               |
-
-**Example 1:** in the beginning of September, Ellen started out with $5 in her bank account. During that same month, Ellen borrowed $20 from Tom. At the end of the month, Ellen bought a pair of shoes for $7. Ellen's cash flow statement for the month of September looks like this:
-
-- Cash inflow: $20
-- Cash outflow:$7
-- Opening balance: $5
-- Closing balance: $20 – $7 + $5 = $18
-
-**Example 2:** in the beginning of June, WikiTables, a company that buys and resells tables, sold 2 tables. They'd originally bought the tables for $25 each, and sold them at a price of $50 per table. The first table was paid out in cash however the second one was bought in credit terms. WikiTables' cash flow statement for the month of June looks like this:
-
-> **Important:** the cash flow statement only considers the exchange of actual cash, and ignores what the person in question owes or is owed.
-
-## Statement of financial position (balance sheet)
-
-The balance sheet is the financial statement showing a firm's assets, liabilities and equity (capital) at a set point in time, usually the end of the fiscal year reported on the accompanying income statement.
-
-- **fixed assets**
-  - property
-  - building
-  - equipment (such as factory machinery)
-- **intangible assets**
-  - copyrights
-  - trademarks
-  - patents
-    - pending
-    - international
-- goodwill
-
-Owner's equity, sometimes referred to as net assets, is represented differently depending on the type of business ownership. Business ownership can be in the form of a sole proprietorship, partnership, or a corporation. For a corporation, the owner's equity portion usually shows common stock, and retained earnings (earnings kept in the company). Retained earnings come from the retained earnings statement, prepared prior to the balance sheet.
+**STARTcloud** platform streamlines virtualization efforts, ensuring seamless integration with communication providers for telephony functionalities and other essential services like contact importation.

@@ -6,3 +6,11 @@
     font-size: 50px;
   }
 }
+
+//---DARK MODE
+
+[data-bs-theme="dark"] {
+    .title {
+      color: $gray-300;
+    }
+}

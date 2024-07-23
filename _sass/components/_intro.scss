@@ -6,8 +6,8 @@
   padding-bottom: 60px;
   overflow: hidden;
   @include media-breakpoint-up(md) {
-    padding-top: 140px;
-    padding-bottom: 140px;
+    padding-top: 80px;
+    padding-bottom: 60px;
   }
   h1 {
     color: $black;
@@ -44,4 +44,20 @@
 .intro-small {
   padding-top: 100px;
   padding-bottom: 30px;
+}
+
+//---DARK MODE
+
+[data-bs-theme="dark"] {
+    .intro {
+      h1 {
+        color: $gray-300;
+      }
+      h2 {
+        color: $gray-300;
+      }
+      p {
+        color: $gray-300;
+      }
+    }
 }

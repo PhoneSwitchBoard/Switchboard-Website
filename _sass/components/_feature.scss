@@ -27,3 +27,11 @@
     margin-top: auto;
   }
 }
+
+//---DARK MODE
+
+[data-bs-theme="dark"] {
+    .feature {
+      background-color: $gray-900;
+    }
+}

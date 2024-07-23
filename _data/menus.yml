@@ -1,21 +1,39 @@
 main:
-  - name: "Services"
-    url: "/services/"
-    weight: 2
-  - name: "Team"
-    url: "/team/"
-    weight: 3
-  - name: "About"
-    url: "/about/"
-    weight: 4
-  - name: "Contact"
-    url: "/contact/"
-    weight: 5
-
-footer:
   - name: "Home"
     url: "/"
+    weight: 2
+  - name: "Services"
+    url: "/services/"
+    weight: 3
+  - name: "Blog"
+    url: "/blog/"
+    weight: 4
+  - name: "Docs"
+    url: "/docs/"
+    weight: 5
+  - name: "About"
+    url: "/about/"
+    weight: 6
+  - name: "Contact"
+    url: "/contact/"
+    weight: 7
+
+footer:
+  - name: "Toggle Theme"
+    id: "btnSwitch"
+    url: "#"
     weight: 1
+    icon: "bi bi-toggle-on"
   - name: "Contact"
     url: "/contact/"
     weight: 2
+
+
+# - name: "Change Theme"
+#    url: "#"
+#    weight: 2
+#    subfolderitems:
+#      - name: "Light"
+#        url: "#"
+#      - name: "Dark"
+#        url: "../"

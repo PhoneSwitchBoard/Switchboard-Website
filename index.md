@@ -1,13 +1,14 @@
 ---
-title: Jekyll Serif Theme
+title: Switchboard Cloud
 layout: home
-description: Jekyll Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
-intro_image: "images/illustrations/pointing.svg"
+description: SwitchBoard Cloud is an Asterisk-based corporate PBX that can fulfill a company's phone system needs from an easy-to-use web interface.
+intro_image: "images/illustrations/switchboard_devices.png"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true
 show_call_box: true
 ---
 
-# Serif - A Jekyll Business Theme.
+<h1 style="width: 100%; margin-bottom: auto;"> Switchboard Cloud </h1>
+# Phone System
 
-Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
+Manage call queues for all departments in your company, including **customer service**. Keep **audio records** of all your business calls.
