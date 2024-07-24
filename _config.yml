@@ -1,4 +1,4 @@
-baseurl: '/'
+baseurl:
 permalink: pretty
 title: 'Switchboard Cloud'
 host: 127.0.0.1
