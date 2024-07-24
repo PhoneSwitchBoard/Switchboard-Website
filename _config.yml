@@ -1,6 +1,7 @@
-baseurl: '/'
+baseurl:
 permalink: pretty
 title: 'Switchboard Cloud'
+theme: minima
 
 logo:
   mobile: "images/logo/logo-mobile.svg"
