@@ -1,5 +1,7 @@
-baseurl: ""
-url: ""
+baseurl: "/Switchboard-Website"
+url: "http://phoneswitchboard.github.io"
+host: 127.0.0.1
+port: 4000
 permalink: pretty
 title: 'Switchboard Cloud'
 
