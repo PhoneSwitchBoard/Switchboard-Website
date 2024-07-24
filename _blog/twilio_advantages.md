@@ -3,6 +3,7 @@ title: "Advantages of Using Twilio as the Communications Provider"
 date: 2018-12-20T13:44:23+10:00
 image: "images/blog/twilio.png"
 subtitle: ""
+promoted: true
 weight: 5
 ---
 

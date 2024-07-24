@@ -3,6 +3,7 @@ title: "How an IVR Manages Queues"
 date: 2018-12-20T13:45:06+10:00
 image: "images/blog/ivr.png"
 subtitle: "Customer Service Department"
+promoted: true
 weight: 6
 ---
 

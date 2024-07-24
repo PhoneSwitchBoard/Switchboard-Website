@@ -3,6 +3,7 @@ title: "Legal consequences for making fraudulent calls"
 date: 2018-11-19T10:47:58+10:00
 image: "images/blog/justice.png"
 subtitle: ""
+promoted: true
 weight: 4
 ---
 
