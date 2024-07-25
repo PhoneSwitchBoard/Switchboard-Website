@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -40,7 +40,11 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      document.documentElement.setAttribute('data-bs-theme', localStorage.getItem('data-bs-theme'))
+      if (localStorage.getItem('data-bs-theme')) {
+        document.documentElement.setAttribute('data-bs-theme', localStorage.getItem('data-bs-theme'))
+      }else{
+        document.documentElement.setAttribute('data-bs-theme', 'dark')
+      }
     });
 
     document.getElementById('btnSwitch').addEventListener('click',()=>{
