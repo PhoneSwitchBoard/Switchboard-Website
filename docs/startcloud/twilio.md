@@ -6,6 +6,7 @@ layout: docs
 
 ## Twilio
 
+**Switchboard Cloud** uses **Twilio** to connect your calls. You’ll create your **Twilio** account after signing up for **STARTcloud**, and before deploying a new instance of **Switchboard Cloud**.
 
 Once you have logged into your STARcloud account, go to the `Integrations` menu option and click `New Integration`.
 
