@@ -1,7 +1,7 @@
 ---
 title: "User Complaints about Elastix"
 date: 2018-11-19T10:47:58+10:00
-image: "images/blog/Elastix_Thumbnail.png"
+image: "images/blog/elastix_user.png"
 subtitle: "Understanding Common User Complaints about Elastix PBX"
 url: "/blog/elastix_complaints/"
 promoted: true

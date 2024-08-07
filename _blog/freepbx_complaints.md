@@ -1,7 +1,7 @@
 ---
 title: "Main Complaints of FreePBX"
 date: 2018-12-20T13:44:55+10:00
-image: "images/blog/complaints.png"
+image: "images/blog/freepbx_complaints.png"
 subtitle: "An In-Depth Analysis"
 promoted: true
 weight: 8

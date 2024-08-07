@@ -1,7 +1,7 @@
 ---
 title: "Turbodial & Keap"
 date: 2018-11-19T10:47:58+10:00
-image: "images/blog/turbodial.png"
+image: "images/blog/turbodial_user.png"
 subtitle: "Key Improvements and User Complaints"
 url: "/blog/turbodial/"
 promoted: true

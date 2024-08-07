@@ -1,7 +1,7 @@
 ---
 title: "3CX® Softphones"
 date: 2018-11-19T10:47:58+10:00
-image: "images/blog/3CX_Thumbnail.png"
+image: "images/blog/3cx_user.png"
 subtitle: "Understanding Connection Errors in 3CX® Softphones"
 url: "/blog/3cx_softphones/"
 promoted: true

@@ -1,7 +1,7 @@
 ---
 title: "Companies save on their phone bill by switching to VoIP"
 date: 2018-12-20T13:45:06+10:00
-image: "images/blog/voip.png"
+image: "images/blog/voip_phone_bill.png"
 subtitle: ""
 promoted: true
 weight: 7

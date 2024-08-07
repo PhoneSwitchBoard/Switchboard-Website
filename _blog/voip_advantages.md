@@ -1,7 +1,7 @@
 ---
 title: "Advantages of Using a VoIP PBX Phone System"
 date: 2018-12-20T13:44:30+10:00
-image: "images/blog/pbx.png"
+image: "images/blog/pbx_advantages.png"
 subtitle: ""
 promoted: true
 weight: 3
