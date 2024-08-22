@@ -4,7 +4,7 @@ date: 2019-05-18T12:33:46+10:00
 weight: 7
 ---
 
-To operate **Switchboard Cloud** phone system, the first option of terminals to connect, as extensions, should be VoIP phones.
+To operate **Switchboard Cloud™** phone system, the first option of terminals to connect, as extensions, should be VoIP phones.
 
 <p align="center">
   <img src="./../../images/services/Yealink-t42u.png" />
@@ -26,7 +26,7 @@ Use that IP address to access the phone's configuration page from your browser. 
 ![Screenshot: VoIP Phone](./../../images/docs/phone_config/voip_phone_conf.png)
 
 
-* The `Display Name`, `Register Name` and `User Name` are the extension number, which you previously configured for your agent in the **Switchboard Cloud** Interface.
+* The `Display Name`, `Register Name` and `User Name` are the extension number, which you previously configured for your agent in the **Switchboard Cloud™** Interface.
 
 * The Password is the one stored in the `ps_auths` DB table, for your extension.
 

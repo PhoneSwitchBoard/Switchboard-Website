@@ -6,7 +6,7 @@ layout: docs
 
 ## Twilio
 
-**Switchboard Cloud** uses **Twilio** to connect your calls. You’ll create your **Twilio** account after signing up for **STARTcloud**, and before deploying a new instance of **Switchboard Cloud**.
+**Switchboard Cloud™** uses **Twilio** to connect your calls. You’ll create your **Twilio** account after signing up for **STARTcloud™**, and before deploying a new instance of **Switchboard Cloud™**.
 
 Once you have logged into your STARcloud account, go to the `Integrations` menu option and click `New Integration`.
 
@@ -26,7 +26,7 @@ Set a **Friendly name**, choose a **Region** and a **Key Type**; then click `Cre
 </p>
 
 
-- Copy the **SID** and paste it in the first tab you had, the **STARTcloud** one, under **Key Name**.
+- Copy the **SID** and paste it in the first tab you had, the **STARTcloud™** one, under **Key Name**.
 - Copy the **Secret** and paste it into the **Key Value**.
 
 Then click `Done`.
@@ -39,7 +39,7 @@ Finally, to find the **Account Name**, go back to `Account` -> `API Keys & Token
 </p>
 
 
-Now that you have all the necessary values to create the integration in **STARTcloud**, press `Save` and the process is complete.
+Now that you have all the necessary values to create the integration in **STARTcloud™**, press `Save` and the process is complete.
 
 
 <p align="center">

@@ -4,7 +4,7 @@ permalink: /docs/switchboard/competitors
 layout: docs
 ---
 
-## Switchboard Cloud Vs. Main Competitors
+## Switchboard Cloud™ Vs. Main Competitors
 
 
 A telephone system is an important part of the success of any business. **Switchboard Phone System**, **8×8** and **RingCentral** are three of the most popular unified communications systems for small businesses on a limited budget in Latin America and the United States. If you are planning to hire any of these services, we make your decision easier through this comparative table that summarizes the main characteristics of these telephone systems and compares them.
@@ -16,7 +16,7 @@ A telephone system is an important part of the success of any business. **Switch
 
 
 <table class="table table-bordered table-striped text-center">
-	<tr><th>Category</th><th>Switchboard Cloud</th><th>8x8</th><th>Ring Central</th></tr>
+	<tr><th>Category</th><th>Switchboard Cloud™</th><th>8x8</th><th>Ring Central</th></tr>
 	<tr><td>Starting Price</td><td>$10 per user per month</td><td>$24 per user per month</td><td>$20 per user per month</td></tr>
 	<tr><td>Free Trial</td><td>No</td><td>30 days</td><td>15 days</td></tr>
 	<tr><td>Unlimited Domestic Calls</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>

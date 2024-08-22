@@ -41,7 +41,7 @@ To create a new extension to your agent, from which you are logged in, go to the
 
 ## Create new Mobile Extension
 
-You can also use your mobile phone to make and receive calls from the **Switchboard Cloud** interface. We recommend using a phone connected to the local network, but if you are out of the office one day you can use your cell phone and stay connected to the phone system.
+You can also use your mobile phone to make and receive calls from the **Switchboard Cloud™** interface. We recommend using a phone connected to the local network, but if you are out of the office one day you can use your cell phone and stay connected to the phone system.
 
 To create a mobile extension go to `User Settings` -> `Create Extension`. Choose Mobile type, with any of the prefixes (but you cannot have more than one mobile extension with the same prefix). Note that the resulting extension number will be = the prefix + agent number.
 
@@ -51,7 +51,7 @@ To create a mobile extension go to `User Settings` -> `Create Extension`. Choose
 
 > The system will treat your cell phone as another extension, but internally there are some differences when connecting a call, since it will have an extra channel to connect with your device.
 
-Remember that you can work with your cell phone if you make and answer calls from the **Switchboard Cloud** Interface (not from your cell phone).
+Remember that you can work with your cell phone if you make and answer calls from the **Switchboard Cloud™** Interface (not from your cell phone).
 
 It's important that you tell the application which of your extensions you're currently connected from. To do this, easily configure your Primary extension in the dashboard at the top right, as you can see in the image below.
 

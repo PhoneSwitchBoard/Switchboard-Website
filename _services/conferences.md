@@ -4,7 +4,7 @@ date: 2019-04-18T12:33:46+10:00
 weight: 6
 ---
 
-**Switchboard Cloud** allows you to have group conversations, when at least 3 participants join a call, a conference will automatically be created.
+**Switchboard Cloud™** allows you to have group conversations, when at least 3 participants join a call, a conference will automatically be created.
 
 
 ## Conference Rooms

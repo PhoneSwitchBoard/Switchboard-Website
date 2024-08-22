@@ -1,7 +1,7 @@
 {
     "originRepo": "https://github.com/PhoneSwitchBoard/Switchboard-Website",
     "title": "Switchboard-Website",
-    "description": "Switchboard Cloud is a PBX that works with Asterisk",
+    "description": "Switchboard Cloud™ is a PBX that works with Asterisk",
     "demoUrl": "https://www.switchboard365.com/",
     "categories": {
       "ssg": ["jekyll"],

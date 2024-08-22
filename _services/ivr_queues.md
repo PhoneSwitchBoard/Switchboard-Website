@@ -4,12 +4,12 @@ date: 2024-07-19T09:54:00+10:00
 weight: 1
 ---
 
-Calls made to your company's telephone lines will be answered by the IVR, an automated telephone system that connects with **Switchboard Cloud** and gives callers options, by playing pre-recorded voice messages, to choose through the tone keypad, where their call should be routed to be answered by a specific department or agent.
+Calls made to your company's telephone lines will be answered by the IVR, an automated telephone system that connects with **Switchboard Cloud™** and gives callers options, by playing pre-recorded voice messages, to choose through the tone keypad, where their call should be routed to be answered by a specific department or agent.
 
 
 ## Queues
 
-In **Switchboard Cloud** you can have different Queues for your calling contacts to be routed to. This way you can separate calls intended for User Support, for example, from Sales calls.
+In **Switchboard Cloud™** you can have different Queues for your calling contacts to be routed to. This way you can separate calls intended for User Support, for example, from Sales calls.
 
 
 > To add yourself, the Agent who logged in, to one of the existing queues, you can use the `Add to Queue` option in the left menu.

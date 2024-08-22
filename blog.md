@@ -9,4 +9,4 @@ intro_image_hide_on_mobile: false
 
 # Blog Posts
 
-Looking to improve communications in your company? Go over everything you should consider to hire Switchboard Cloud.
+Looking to improve communications in your company? Go over everything you should consider to hire Switchboard Cloud™.

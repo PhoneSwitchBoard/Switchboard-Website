@@ -19,7 +19,7 @@ The **SIP** Trunking service performs authentication via IP, so in order to use 
 </p>
 
 
-In **Switchboard Cloud** we create a trunk in the initial configuration of your interface, that process is transparent for you. If you want to see more details of the created trunk you can go to the Menu option `Asterisk Settings` -> `Trunks`, available only for administrator users.
+In **Switchboard Cloud™** we create a trunk in the initial configuration of your interface, that process is transparent for you. If you want to see more details of the created trunk you can go to the Menu option `Asterisk Settings` -> `Trunks`, available only for administrator users.
 
 
 ![Screenshot: Trunks](./../../images/docs/trunks/trunk.png)

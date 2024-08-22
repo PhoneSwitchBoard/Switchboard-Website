@@ -4,7 +4,7 @@ baseurl:
 host: 127.0.0.1
 port: 4000
 permalink: pretty
-title: 'Switchboard Cloud'
+title: 'Switchboard Cloud™'
 
 logo:
   mobile: "images/logo/logo-mobile.svg"

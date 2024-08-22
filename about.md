@@ -5,7 +5,7 @@ description: About
 bodyClass: page-about
 ---
 
-# Switchboard Cloud Phone System
+# Switchboard Cloud™ Phone System
 
 > A Phone System to manage call queues for customer service in your company and keep audio records of all your business calls.
 
@@ -13,28 +13,25 @@ bodyClass: page-about
 ![Customer Service](/images/voip_phone.jpg)
 
 
-**Switchboard Cloud** is a web phone interface that allows you to manage incoming and outgoing calls for the staff of a company. It uses Voice over Internet Protocol (VoIP) technology to manage telephone calls over the Internet.
+**SwitchBoard Cloud™** is an [Asterisk](https://www.asterisk.org/)-based corporate PBX that can fulfill a company's phone system needs from an easy-to-use web interface. It uses VoIP technology to manage telephone calls over the Internet.
 
-**Switchboard Cloud** works with [Asterisk](https://www.asterisk.org/), a private branch exchange (PBX), so it connects a certain number of communication terminals, such as telephones or fax machines, to each other and to the public telephone network.
+From the **Switchboard Cloud™** web interface you can manage incoming and outgoing calls for the staff of a company, that way people in all departments can stay connected, handling calls from different offices as local calls. It will be easy for operators to keep track of the calls they make, having the conversations recorded for reference.
 
-With **Switchboard Cloud**, people in all departments of a company can stay connected, handling calls from different offices as local calls. It will be easy for operators to keep track of the calls they make, having the conversations recorded for reference.
+**Switchboard Cloud™** has complete features of a phone system, such as an **IVR**, call **queues** for customer service, call **recordings**, **call notes**, **voice messages**, voice **conferencing**, among others. You can also use your mobile phone as an extension.
 
-**Switchboard Cloud** has complete features of a phone system, such as an **IVR**, call **queues** for customer service, call **recordings**, **call notes**, **voice messages**, voice **conferencing**, you can use your mobile phone as an extension, among others.
-
-If you want to know more about **Switchboard Cloud** Phone System, please contact Sales at [STARTcloud, Inc.][startcloud-contactus]
+If you want to know more about **Switchboard Cloud™** Phone System, please contact Sales at [STARTcloud™][startcloud-contactus]
 
 [startcloud-contactus]: https://startcloud.com/contact-us.html
 
 
-## About STARTcloud
+## About STARTcloud™
 
 
-> **STARTcloud** is an Application Marketplace tailored for deploying software solutions like **Switchboard Cloud** across major cloud platforms such as _AWS_ and _Azure_.
-
+> **STARTcloud™** is an application marketplace designed to deploy software solutions like **Switchboard Cloud™** on major cloud platforms such as _AWS_ and _Azure_.
 
 ![VoIP Phone PBX](/images/support_agent.jpg)
 
 
-**STARTcloud** simplifies the deployment process, allowing you to swiftly build, operate, access and oversee your **Switchboard Cloud** instance while retaining full control over your data.
+**STARTcloud™** simplifies the deployment process, allowing you to quickly build, operate, access and monitor your **Switchboard Cloud™** instance, while retaining full control over your data.
 
-**STARTcloud** platform streamlines virtualization efforts, ensuring seamless integration with communication providers for telephony functionalities and other essential services like contact importation.
+The **STARTcloud™** platform streamlines virtualization efforts, ensuring seamless integration with communication providers for telephony functionalities and other essential services such as contact import.

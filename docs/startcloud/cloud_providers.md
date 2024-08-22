@@ -7,7 +7,7 @@ layout: docs
 ## Cloud Providers
 
 
-**STARTcloud** is able to deploy and manage applications across multiple cloud-providers. Before launching your first Instance, you need to give us access to your on-demand cloud platform provider.
+**STARTcloud™** is able to deploy and manage applications across multiple cloud-providers. Before launching your first Instance, you need to give us access to your on-demand cloud platform provider.
 
 
 1. #### **AWS**
@@ -107,7 +107,7 @@ Go back to the **Users** list and choose the user you just created. Now select t
 ![Screenshot: AWS Create Access Key Step 4](./../../images/docs/cloud_providers/aws_access_key_step4.png)
 
 
-- **Copy your Access Key to the STARTcloud Integrations**
+- **Copy your Access Key to the STARTcloud™ Integrations**
 
 
 Go back to the STATcloud Integrations page, and copy:

@@ -4,7 +4,7 @@ date: 2019-01-28T15:15:26+10:00
 weight: 2
 ---
 
-All calls made or received on **Switchboard Cloud** are automatically recorded.
+All calls made or received on **Switchboard Cloud™** are automatically recorded.
 
 
 To access your call Recordings, go to the `Recordings` menu option.

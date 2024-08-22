@@ -37,12 +37,12 @@ To set those properties that are not initialized, find the description and an ex
     <tr>
         <td>general</td>
         <td>postgres_username</td>
-        <td>Postgres user, owner or privileged user in your Postgres configuration to log and access the database from the Switchboard Cloud interface. E.g: asterisk_role</td>
+        <td>Postgres user, owner or privileged user in your Postgres configuration to log and access the database from the Switchboard Cloud™ interface. E.g: asterisk_role</td>
     </tr>
     <tr>
         <td>general</td>
         <td>postgres_password</td>
-        <td>Password of the Postgres user that you chose in postgres_username, to connect and access the database from the Switchboard Cloud interface. E.g: 12345678</td>
+        <td>Password of the Postgres user that you chose in postgres_username, to connect and access the database from the Switchboard Cloud™ interface. E.g: 12345678</td>
     </tr>
     <tr>
         <td>general</td>
@@ -132,7 +132,7 @@ To set those properties that are not initialized, find the description and an ex
     <tr>
         <td>mail</td>
         <td>from_address</td>
-        <td>Email address from which Switchboard Cloud sends emails. E.g: email@domain.com</td>
+        <td>Email address from which Switchboard Cloud™ sends emails. E.g: email@domain.com</td>
     </tr>
     <tr>
         <td>mail</td>

@@ -5,9 +5,9 @@ weight: 4
 ---
 
 
-The **Switchboard Cloud** phone system allows people calling you (or someone else in your company) to leave a voice message when you are unable to answer the phone.
+The **Switchboard Cloud™** phone system allows people calling you (or someone else in your company) to leave a voice message when you are unable to answer the phone.
 
-This is how all users of the telephone system can access a list of voice messages, left by the people who have called them, from the **Switchboard Cloud** Dashboard.
+This is how all users of the telephone system can access a list of voice messages, left by the people who have called them, from the **Switchboard Cloud™** Dashboard.
 
 
 > You just have to select the message you want to listen to by clicking on it, and it will be loaded into the player.

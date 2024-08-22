@@ -9,4 +9,4 @@ intro_image_hide_on_mobile: true
 
 # A telephone system for your company.
 
-We have an automated platform from where you can launch an instance with **Switchboard Cloud** installed on it and choose between _multiple cloud providers_.
+We have an automated platform from where you can launch an instance with **Switchboard Cloud™** installed on it and choose between _multiple cloud providers_.

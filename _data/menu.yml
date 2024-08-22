@@ -1,4 +1,4 @@
-- title: "Switchboard Cloud"
+- title: "Switchboard Cloud™"
   link: /docs/
   subtree:
     - title: "Launch an Instance"
@@ -21,10 +21,10 @@
           - title: "Microsoft 365"
             link: /docs/startcloud/microsoft
 
-        - title: "Launch Switchboard Cloud Instance"
+        - title: "Launch Switchboard Cloud™ Instance"
           link: /docs/startcloud/launch
 
-    - title: "Start using Switchboard Cloud"
+    - title: "Start using Switchboard Cloud™"
       link: /docs/switchboard/sign_in
       subtree:
 
