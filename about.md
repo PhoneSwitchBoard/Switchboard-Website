@@ -13,7 +13,7 @@ bodyClass: page-about
 ![Customer Service](/images/voip_phone.jpg)
 
 
-**SwitchBoard Cloud™** is an [Asterisk](https://www.asterisk.org/)-based corporate PBX that can fulfill a company's phone system needs from an easy-to-use web interface. It uses VoIP technology to manage telephone calls over the Internet.
+**SwitchBoard Cloud™** is an [Asterisk®](https://www.asterisk.org/)-based corporate PBX that can fulfill a company's phone system needs from an easy-to-use web interface. It uses VoIP technology to manage telephone calls over the Internet.
 
 From the **Switchboard Cloud™** web interface you can manage incoming and outgoing calls for the staff of a company, that way people in all departments can stay connected, handling calls from different offices as local calls. It will be easy for operators to keep track of the calls they make, having the conversations recorded for reference.
 

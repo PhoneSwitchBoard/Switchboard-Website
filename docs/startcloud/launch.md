@@ -39,7 +39,7 @@ In the next step, select:
 
 Now select,
 1. An **SSH Key** with which you want to authenticate the **STARTcloud™** application on your cloud provider.
-2. Also, in the **Rule Type**, enable traffic for ports 5060-5061 which are the ones **Asterisk** uses for communications.
+2. Also, in the **Rule Type**, enable traffic for ports 5060-5061 which are the ones **Asterisk®** uses for communications.
 3. And lastly add your IP address to the allowed **IP range**.
 
 ![Screenshot: Launch Switchboard Cloud™ Application](./../../images/docs/launch/launch_step5.png)

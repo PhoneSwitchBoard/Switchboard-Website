@@ -30,7 +30,7 @@ Use that IP address to access the phone's configuration page from your browser. 
 
 * The Password is the one stored in the `ps_auths` DB table, for your extension.
 
-* The Server host is the IP address where your **Asterisk** service is installed. In this example we use a local IP address, ideal for the case in which your VoIP phone is connected to your company's local network, normally via a wired network connection.
+* The Server host is the IP address where your **Asterisk®** service is installed. In this example we use a local IP address, ideal for the case in which your VoIP phone is connected to your company's local network, normally via a wired network connection.
 
 
 ## Set Up a Soft Phone

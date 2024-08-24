@@ -7,7 +7,7 @@ layout: docs
 ## Inbound Routes
 
 
-The **Inbound routes** page is available only for administrator users, under the `Asterisk Settings` menu option. It allows you to configure which destination **Asterisk** uses for inbound calls from **trunks**.
+The **Inbound routes** page is available only for administrator users, under the `Asterisk Settings` menu option. It allows you to configure which destination **Asterisk®** uses for inbound calls from **trunks**.
 
 
 ![Screenshot: Inbound Routes](./../../images/docs/inbound_routes/inbound_route.png)

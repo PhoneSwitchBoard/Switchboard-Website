@@ -27,7 +27,7 @@ To set those properties that are not initialized, find the description and an ex
     <tr>
         <td>general</td>
         <td>asterisk_host</td>
-        <td>Server name or IP address of the server where Asterisk is installed. E.g: vagrant.asterisk</td>
+        <td>Server name or IP address of the server where Asterisk® is installed. E.g: vagrant.asterisk</td>
     </tr>
     <tr>
         <td>general</td>
@@ -97,12 +97,12 @@ To set those properties that are not initialized, find the description and an ex
     <tr>
         <td>manager</td>
         <td>password</td>
-        <td>Password that we use to connect to the Asterisk Management Interface (AMI). This password is stored in the asterisk_config DB table, you can filter by filename=&#39;manager.conf&#39;. E.g: password</td>
+        <td>Password that we use to connect to the Asterisk® Management Interface (AMI). This password is stored in the asterisk_config DB table, you can filter by filename=&#39;manager.conf&#39;. E.g: password</td>
     </tr>
     <tr>
         <td>manager</td>
         <td>username</td>
-        <td>Username that we use to connect to the Asterisk Management Interface (AMI). This username is stored in the asterisk_config DB table, you can filter by filename=’manager.conf’. E.g: switchboard</td>
+        <td>Username that we use to connect to the Asterisk® Management Interface (AMI). This username is stored in the asterisk_config DB table, you can filter by filename=’manager.conf’. E.g: switchboard</td>
     </tr>
     <tr>
         <td>call_record</td>
@@ -147,7 +147,7 @@ To set those properties that are not initialized, find the description and an ex
     <tr>
         <td>voicemail</td>
         <td>base_directory</td>
-        <td>File directory where the audio files of received voicemails are saved. Asterisk works with the INBOX, Old and Deleted folders within a folder for each agent, which will be the Agent ID. E.g: /nsf-mounts/asterisk/voicemail/101/INBOX</td>
+        <td>File directory where the audio files of received voicemails are saved. Asterisk® works with the INBOX, Old and Deleted folders within a folder for each agent, which will be the Agent ID. E.g: /nsf-mounts/asterisk/voicemail/101/INBOX</td>
     </tr>
     <tr>
         <td>voicemail</td>
@@ -157,6 +157,6 @@ To set those properties that are not initialized, find the description and an ex
     <tr>
         <td>voicemail</td>
         <td>folders</td>
-        <td>The folders that Asterisk needs in its file directory to save and manage voicemail audio files for each Agent. E.g: INBOX;Old;DELETED</td>
+        <td>The folders that Asterisk® needs in its file directory to save and manage voicemail audio files for each Agent. E.g: INBOX;Old;DELETED</td>
     </tr>
 </table>
