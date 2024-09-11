@@ -185,11 +185,8 @@ html, body {
 }
 
 .post-menu-content {
-  @media (min-width: 601px) {
+  @media (min-width: 800px) {
     padding-left: 2%;
-  }
-  @media (max-width: 600px) {
-    margin-left: 4%;
   }
 }
 
