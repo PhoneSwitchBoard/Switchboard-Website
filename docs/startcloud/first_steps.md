@@ -11,7 +11,7 @@ Sign Up to the **STARTcloud™** platform by following this [link](http://startc
 
 
 <p align="center">
-  <img class="img-sm" src="./../../images/docs/first_steps/startcloud_signup.png" />
+  <img src="./../../images/docs/first_steps/startcloud_signup.png" />
 </p>
 
 
@@ -22,7 +22,7 @@ Once you are registered, [log in](http://startcloud.com/login). You can follow t
 
 
 <p align="center">
-  <img class="img-sm" src="./../../images/docs/first_steps/startcloud_login.png" />
+  <img src="./../../images/docs/first_steps/startcloud_login.png" />
 </p>
 
 

@@ -1,68 +1,68 @@
 - title: "Switchboard Cloud™"
   link: /docs/
+
+- title: "Launch an Instance"
+  link: /docs/startcloud/before_launch
   subtree:
-    - title: "Launch an Instance"
-      link: /docs/startcloud/before_launch
+    - title: "First steps"
+      link: /docs/startcloud/first_steps
+
+    - title: "Cloud Providers"
+      link: /docs/startcloud/cloud_providers
+
+    - title: "SSH Keys"
+      link: /docs/startcloud/ssh_key
+
+    - title: "Integrations"
+      link: /docs/startcloud/integrations
       subtree:
-        - title: "First steps"
-          link: /docs/startcloud/first_steps
+      - title: "Twilio Connect"
+        link: /docs/startcloud/twilio
+      - title: "Microsoft 365"
+        link: /docs/startcloud/microsoft
 
-        - title: "Cloud Providers"
-          link: /docs/startcloud/cloud_providers
+    - title: "Launch Switchboard Cloud™ Instance"
+      link: /docs/startcloud/launch
 
-        - title: "SSH Keys"
-          link: /docs/startcloud/ssh_key
+- title: "Start using Switchboard Cloud™"
+  link: /docs/switchboard/sign_in
+  subtree:
 
-        - title: "Integrations"
-          link: /docs/startcloud/integrations
-          subtree:
-          - title: "Twilio Connect"
-            link: /docs/startcloud/twilio
-          - title: "Microsoft 365"
-            link: /docs/startcloud/microsoft
+      - title: "Interface Configuration"
+        link: /docs/switchboard/interface_config
 
-        - title: "Launch Switchboard Cloud™ Instance"
-          link: /docs/startcloud/launch
+      - title: "Queues"
+        link: /docs/switchboard/queues
 
-    - title: "Start using Switchboard Cloud™"
-      link: /docs/switchboard/sign_in
-      subtree:
+      - title: "Agents and Extensions"
+        link: /docs/switchboard/extensions
 
-          - title: "Interface Configuration"
-            link: /docs/switchboard/interface_config
+      - title: "Set Up VoIP Phones"
+        link: /docs/switchboard/phone_config
 
-          - title: "Queues"
-            link: /docs/switchboard/queues
+      - title: "Recordings"
+        link: /docs/switchboard/recordings
 
-          - title: "Agents and Extensions"
-            link: /docs/switchboard/extensions
+      - title: "Call Records"
+        link: /docs/switchboard/call_records
 
-          - title: "Set Up VoIP Phones"
-            link: /docs/switchboard/phone_config
+      - title: "SIP Trunks"
+        link: /docs/switchboard/trunks
+        subtree:
+        - title: "Inbound Routes"
+          link: /docs/switchboard/inbound_routes
 
-          - title: "Recordings"
-            link: /docs/switchboard/recordings
+        - title: "Outbound Routes"
+          link: /docs/switchboard/outbound_routes
 
-          - title: "Call Records"
-            link: /docs/switchboard/call_records
+      - title: "Voicemails"
+        link: /docs/switchboard/voicemails
 
-          - title: "SIP Trunks"
-            link: /docs/switchboard/trunks
-            subtree:
-            - title: "Inbound Routes"
-              link: /docs/switchboard/inbound_routes
+      - title: "Conferences"
+        link: /docs/switchboard/conferences
 
-            - title: "Outbound Routes"
-              link: /docs/switchboard/outbound_routes
+      - title: "Internationalization"
+        link: /docs/switchboard/i18n
 
-          - title: "Voicemails"
-            link: /docs/switchboard/voicemails
-
-          - title: "Conferences"
-            link: /docs/switchboard/conferences
-
-          - title: "Internationalization"
-            link: /docs/switchboard/i18n
-
-          - title: "Competitors"
-            link: /docs/switchboard/competitors
+      - title: "Competitors"
+        link: /docs/switchboard/competitors

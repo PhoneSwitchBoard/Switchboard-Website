@@ -9,9 +9,9 @@ bodyClass: page-about
 
 > A Phone System to manage call queues for customer service in your company and keep audio records of all your business calls.
 
-
-![Customer Service](/images/voip_phone.jpg)
-
+<p align="center">
+  <img src="./../../images/voip_phone.jpg" />
+</p>
 
 **SwitchBoard Cloud™** is an [Asterisk®](https://www.asterisk.org/)-based corporate PBX that can fulfill a company's phone system needs from an easy-to-use web interface. It uses VoIP technology to manage telephone calls over the Internet.
 
@@ -29,7 +29,9 @@ If you want to know more about **Switchboard Cloud™** Phone System, please con
 
 > **STARTcloud™** is an application marketplace designed to deploy software solutions like **Switchboard Cloud™** on major cloud platforms such as _AWS_ and _Azure_.
 
-![VoIP Phone PBX](/images/support_agent.jpg)
+<p align="center">
+  <img src="./../../images/support_agent.jpg" />
+</p>
 
 
 **STARTcloud™** simplifies the deployment process, allowing you to quickly build, operate, access and monitor your **Switchboard Cloud™** instance, while retaining full control over your data.

@@ -171,7 +171,6 @@ html, body {
 .sidebar {
   grid-area: sidebar;
   overflow-y: scroll;
-  max-width: 30%;
 }
 
 .sidenav-wrapper {
@@ -186,8 +185,12 @@ html, body {
 }
 
 .post-menu-content {
-  max-width: 70%;
-  padding-left: 2%;
+  @media (min-width: 601px) {
+    padding-left: 2%;
+  }
+  @media (max-width: 600px) {
+    margin-left: 4%;
+  }
 }
 
 /* Style the tab */
@@ -252,16 +255,8 @@ li {
  * Images
  */
 img {
-  max-width: 100%;
+  max-width: 98%;
   vertical-align: middle;
-}
-
-.img-sm {
-  max-width: 30% !important;
-}
-
-.img-xs {
-  max-width: 20% !important;
 }
 
 //---DARK MODE
