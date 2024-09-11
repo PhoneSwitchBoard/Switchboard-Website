@@ -188,6 +188,10 @@ html, body {
   @media (min-width: 800px) {
     padding-left: 2%;
   }
+  @media (max-width: 799px) {
+    margin: 1%;
+    padding-right: 5%;
+  }
 }
 
 /* Style the tab */
@@ -252,7 +256,7 @@ li {
  * Images
  */
 img {
-  max-width: 98%;
+  max-width: 100%;
   vertical-align: middle;
 }
 

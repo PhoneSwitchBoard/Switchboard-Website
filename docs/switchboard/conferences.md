@@ -18,7 +18,9 @@ On the Dashboard there is a space reserved for Conference Rooms. There are 2 typ
  If you want to make an internal conference, between your office colleagues (a call of more than 2 people), use _Ad-hoc_ conferences. To start one, call the first person and then add people to the call, using the `Add to Call` button next to each Agent's name in the agent list.
 
 
-![Screenshot: Add to Conference](./../../images/docs/conferences/add_to_conference.png)
+<p align="center">
+  <img src="./../../images/docs/conferences/add_to_conference.png" />
+</p>
 
 
 Now, if you want to include clients or people outside the organization in the call, you must start a _Call-in_ conference, in one of the 5 available rooms. The first agent to join this conference will be the administrator, and the conference can be started in several ways:

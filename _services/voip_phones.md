@@ -23,7 +23,9 @@ Use that IP address to access the phone's configuration page from your browser. 
 > Go to the Account tab and use the following image as a reference to configure your VoIP phone.
 
 
-![Screenshot: VoIP Phone](./../../images/docs/phone_config/voip_phone_conf.png)
+<p align="center">
+  <img src="./../../images/docs/phone_config/voip_phone_conf.png" />
+</p>
 
 
 * The `Display Name`, `Register Name` and `User Name` are the extension number, which you previously configured for your agent in the **Switchboard Cloud™** Interface.
