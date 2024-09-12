@@ -18,7 +18,7 @@ In a new browser tab, sign in to your **Twilio** account. If you don't have an a
 
 After completing the registration process, go to `Account` -> `API Keys & Tokens` -> `Create API Key`.
 
-Set a **Friendly name**, choose a **Region** and a **Key Type**; then click `Create`. Here the application will display a **SID** and a **Secret**. Please note that the **secret** is only shown once. Make sure to store it in a safe location.
+Set a **Friendly name**, choose a **Region** and a **Key Type**; then click `Create`. Here the application will display a **SID** and a **Secret**. Make sure to copy these 2 values, the **SID** will be the **Key Name** (in the Twilio integration) and the **Secret** will be the **Key Value**. Note that the **Secret** _is only revealed once_, so you should save it in a safe location.
 
 
 <p align="center">
@@ -31,7 +31,7 @@ Set a **Friendly name**, choose a **Region** and a **Key Type**; then click `Cre
 
 Then click `Done`.
 
-Finally, to find the **Account Name**, go back to `Account` -> `API Keys & Tokens` and scroll to the bottom. Copy the Account SID in the **Live credentials** section.
+Finally, to find the **Account Id**, go back to `Account` -> `API Keys & Tokens` and scroll to the bottom. Copy the **Account SID** in the _Live credentials_ section.
 
 
 <p align="center">
