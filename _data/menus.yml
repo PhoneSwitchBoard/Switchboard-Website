@@ -1,19 +1,19 @@
 main:
-  - name: "Home"
-    url: "/"
-    weight: 2
-  - name: "Services"
-    url: "/services/"
-    weight: 3
-  - name: "Blog"
-    url: "/blog/"
-    weight: 4
+#  - name: "Home"
+#    url: "/"
+#    weight: 2
+#  - name: "Services"
+#    url: "/services/"
+#    weight: 3
+#  - name: "Blog"
+#    url: "/blog/"
+#    weight: 4
   - name: "Docs"
     url: "/docs/"
     weight: 5
-  - name: "About"
-    url: "/about/"
-    weight: 6
+#  - name: "About"
+#    url: "/about/"
+#    weight: 6
   - name: "Contact"
     url: "/contact/"
     weight: 7
