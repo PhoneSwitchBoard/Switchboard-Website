@@ -1,33 +1,33 @@
 [
-#  {
-#    "name": "Github",
-#    "link": "https://github.com/PhoneSwitchBoard/Switchboard-Website",
-#    "image": "images/social/github.svg"
-#  },
+//  {
+//    "name": "Github",
+//    "link": "https://github.com/PhoneSwitchBoard/Switchboard-Website",
+//    "image": "images/social/github.svg"
+//  },
   {
     "name": "Twitter",
     "link": "https://twitter.com/switchboardcl",
     "image": "images/social/twitter.svg"
   },
-#  {
-#      "name": "Facebook",
-#      "link": "https://www.facebook.com/switchboard365",
-#      "image": "images/social/facebook.svg"
-#  },
+//  {
+//      "name": "Facebook",
+//      "link": "https://www.facebook.com/switchboard365",
+//      "image": "images/social/facebook.svg"
+//  },
   {
       "name": "Email",
       "link": "mailto:Sales@switchboard.cloud",
       "image": "images/social/email.svg"
   }
-#  {
-#      "name": "Instagram",
-#      "link": "https://www.instagram.com/switchboard365/",
-#      "image": "images/social/instagram.svg"
-#  },
-#  {
-#      "name": "Discord",
-#      "link": "https://discord.com",
-#      "image": "images/social/discord.svg"
-#  }
+//  {
+//      "name": "Instagram",
+//      "link": "https://www.instagram.com/switchboard365/",
+//      "image": "images/social/instagram.svg"
+//  },
+//  {
+//      "name": "Discord",
+//      "link": "https://discord.com",
+//      "image": "images/social/discord.svg"
+//  }
 
 ]
