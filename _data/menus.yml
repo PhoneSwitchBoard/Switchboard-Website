@@ -15,18 +15,18 @@ main:
 #    url: "/about/"
 #    weight: 6
   - name: "Contact"
-    url: "/contact/"
+    url: "https://www.switchboard.cloud/#contact"
     weight: 7
 
 footer:
-  - name: "Toggle Theme"
-    id: "btnSwitch"
-    url: "#"
-    weight: 1
-    icon: "bi bi-toggle-on"
-  - name: "Contact"
-    url: "/contact/"
-    weight: 2
+#  - name: "Toggle Theme"
+#    id: "btnSwitch"
+#    url: "#"
+#    weight: 1
+#    icon: "bi bi-toggle-on"
+#  - name: "Contact"
+#    url: "/contact/"
+#    weight: 2
 
 
 # - name: "Change Theme"
