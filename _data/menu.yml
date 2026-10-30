@@ -28,6 +28,9 @@
   link: /docs/switchboard/sign_in
   subtree:
 
+      - title: "Finding Your Way Around"
+        link: /docs/switchboard/navigation
+
       - title: "Interface Configuration"
         link: /docs/switchboard/interface_config
 
@@ -63,6 +66,12 @@
 
       - title: "Internationalization"
         link: /docs/switchboard/i18n
+
+      - title: "Ask SwitchBoard"
+        link: /docs/switchboard/ask_switchboard
+
+      - title: "Answers and Question Sets"
+        link: /docs/switchboard/question_sets
 
       - title: "Competitors"
         link: /docs/switchboard/competitors

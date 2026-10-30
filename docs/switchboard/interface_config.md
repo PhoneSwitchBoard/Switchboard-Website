@@ -7,7 +7,7 @@ layout: docs
 ## Main configuration variables for your interface
 
 
-Once you log in to your interface, go to the `Interface Config` menu option.
+Once you log in to your interface, go to `Settings` -> `System` -> `Interface Config`.
 
 
 ![Screenshot: Interface Config](./../../images/docs/interface_config/interface_config.png)

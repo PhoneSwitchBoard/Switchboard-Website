@@ -7,7 +7,7 @@ layout: docs
 ## Queue configuration
 
 
-To add yourself, the Agent who logged in, to one of the existing queues, you can use the `Add to Queue` option in the left menu.
+To add yourself to one of the existing queues, go to the **Dashboard**: the `Queues` panel lists your queues first; open `Other queues` and click `+ Join` on the queue you want. (The screenshot below shows the earlier menu.)
 
 
 <p align="center">
