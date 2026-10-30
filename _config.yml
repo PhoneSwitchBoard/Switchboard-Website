@@ -1,5 +1,5 @@
 baseurl: "/Switchboard-Website"
-url: "http://phoneswitchboard.github.io"
+url: "https://phoneswitchboard.github.io"
 host: 127.0.0.1
 port: 4000
 permalink: pretty
@@ -12,28 +12,6 @@ logo:
   desktop: "images/logo/logo.png"
   desktop_height: "60px"
   desktop_width: "360px"
-
-home: 
-  limit_services: 6
-
-collections:
-  services:
-    output: true
-    sort_by: weight
-  blog:
-    output: true
-
-defaults:
-  - scope:
-      path: ""
-      type: "services"
-    values:
-      layout: "service"
-  - scope:
-      path: ""
-      type: "blog"
-    values:
-      layout: "blog"
 
 sass:
   style: compressed # possible values: nested expanded compact compressed
