@@ -6,7 +6,6 @@ module Redirects
       super(site, site.source, from, "index.html")
       data["layout"] = "redirect"
       data["redirect_to"] = to
-      data["sitemap"] = false
     end
   end
 
@@ -15,7 +14,9 @@ module Redirects
 
     def generate(site)
       (site.data["redirects"] || {}).each do |from, to|
-        site.pages << RedirectPage.new(site, from.sub(%r{\A/}, ""), to)
+        raise "redirects.yml: #{from} has no target" if to.to_s.strip.empty?
+        raise "redirects.yml: #{from} must start and end with /" unless from.start_with?("/") && from.end_with?("/")
+        site.pages << RedirectPage.new(site, from.delete_prefix("/"), to)
       end
     end
   end
