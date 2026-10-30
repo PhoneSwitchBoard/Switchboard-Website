@@ -1,0 +1,28 @@
+# Old path -> new location. Paths are relative to the site root and end in a
+# slash; targets are either site paths or absolute URLs. The marketing site now
+# lives on Wix; old feature pages go to the matching docs page.
+
+/: /docs/
+
+/about/: https://www.switchboard.cloud/
+/contact/: https://www.switchboard.cloud/#contact
+/services/: /docs/
+/services/agents_ext/: /docs/switchboard/extensions
+/services/call_records/: /docs/switchboard/call_records
+/services/conferences/: /docs/switchboard/conferences
+/services/ivr_queues/: /docs/switchboard/queues
+/services/mobile_ext/: /docs/switchboard/extensions
+/services/recordings/: /docs/switchboard/recordings
+/services/voicemails/: /docs/switchboard/voicemails
+/services/voip_phones/: /docs/switchboard/phone_config
+
+/blog/: https://www.switchboard.cloud/blog
+/blog/fraudulent_calls/: https://www.switchboard.cloud/post/legal-consequences-for-making-fraudulent-calls
+/blog/ivr_queues/: https://www.switchboard.cloud/post/how-an-ivr-manages-queues
+/blog/voip_advantages/: https://www.switchboard.cloud/post/voip-pbx-phone-system
+/blog/3cx_softphones/: https://www.switchboard.cloud/post/3cx-alternative
+/blog/elastix_complaints/: https://www.switchboard.cloud/blog
+/blog/freepbx_complaints/: https://www.switchboard.cloud/blog
+/blog/turbodial/: https://www.switchboard.cloud/blog
+/blog/twilio_advantages/: https://www.switchboard.cloud/blog
+/blog/voip_save_money/: https://www.switchboard.cloud/blog

@@ -1,0 +1,16 @@
+{%- assign target = page.redirect_to -%}
+{%- unless target contains "://" -%}{%- assign target = target | absolute_url -%}{%- endunless -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting…</title>
+  <link rel="canonical" href="{{ target | escape }}">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0; url={{ target | escape }}">
+  <script>location.replace({{ target | jsonify }})</script>
+</head>
+<body>
+  <p>This page has moved to <a href="{{ target | escape }}">{{ target | escape }}</a>.</p>
+</body>
+</html>
