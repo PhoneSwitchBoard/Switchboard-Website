@@ -10,7 +10,9 @@ layout: docs
 
 The left menu has two parts: a short menu for everyday work, and a separate **Settings** area for configuring your phone system. You only see the pages your role allows.
 
-<!-- screenshot: images/docs/navigation/workspace_menu.png, the everyday menu as an administrator -->
+<p align="center">
+  <img src="./../../images/docs/navigation/workspace_menu.png" />
+</p>
 
 ### The everyday menu
 
@@ -44,13 +46,17 @@ At the top of the Settings area:
 - **All Settings** lists every settings page you can open, each with a one-line description. Type in its filter box to narrow the list.
 - **Recent** shows the last three settings pages you opened.
 
-<!-- screenshot: images/docs/navigation/all_settings.png, the All Settings page -->
+<p align="center">
+  <img src="./../../images/docs/navigation/all_settings.png" />
+</p>
 
 ### Find any page: Ctrl+K
 
 Press **Ctrl+K** (**Cmd+K** on a Mac), or click the search box at the top of the menu, and type part of a page's name. Search also knows older names and common words, so `asterisk` finds **Maintenance** and `hold music` finds **Music on Hold**. Use the arrow keys and press **Enter** to open a result.
 
-<!-- screenshot: images/docs/navigation/search_pages.png, search results for "hold music" -->
+<p align="center">
+  <img src="./../../images/docs/navigation/search_pages.png" />
+</p>
 
 ### Your account menu
 

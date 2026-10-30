@@ -30,7 +30,9 @@ Ask SwitchBoard **only reads**. It cannot change, delete or send anything, and i
 
 Press **+** to start a new conversation, and **Esc** to close the panel.
 
-<!-- screenshot: images/docs/ask_switchboard/panel.png, an answer with its sources -->
+<p align="center">
+  <img src="./../../images/docs/ask_switchboard/panel.png" />
+</p>
 
 Your earlier questions are under **Assistant history** in your account menu, where you can ask any of them again.
 
@@ -49,7 +51,9 @@ Go to **Settings > AI > AI Assistant**.
 7. **Suggested questions** shown in the panel.
 8. **Limits and history:** questions per person per day (every question costs money at your AI engine's vendor), and **Keep activity for**: how many days activity is kept.
 
-<!-- screenshot: images/docs/ask_switchboard/settings.png, the AI Assistant page -->
+<p align="center">
+  <img src="./../../images/docs/ask_switchboard/settings.png" />
+</p>
 
 **Privacy.** Each question, and the records the assistant reads to answer it, are sent to the vendor of the engine you choose. Nothing is sent until someone asks a question. With an engine on your own server, questions and records stay on your network.
 
