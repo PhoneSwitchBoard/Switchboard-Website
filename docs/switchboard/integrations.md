@@ -21,22 +21,22 @@ This page lists, for each service, the kind of key to create and the permissions
 ### Add a key to SwitchBoard
 
 1. Go to **Settings > Integrations > API Integrations**.
-2. Click **Configure** next to the service.
+2. Click **Connect** next to the service, or **Manage credentials** if it already has a key.
 3. Give the key a **Credential name**, so you can tell your keys apart, for example *Production* or *AI agents*.
 4. Read **What this key needs**, create the key in the service as described below, and paste it in.
 5. Click **Test Connection** if it is offered, then **Save Integration**.
 
 <p align="center">
-  <img src="./../../images/docs/integrations/configure-elevenlabs.png" />
+  <img src="./../../images/docs/integrations/configure-elevenlabs.png" alt="The ElevenLabs configure page, with the What this key needs box listing the four permissions" />
 </p>
 
-You can keep several keys for one service. The one marked **Primary** is used unless a feature has been set to use a different one.
+You can keep several keys for one service. The one marked **Default for this vendor** is used unless a feature has been set to use a different one. Use **Make default** to change it.
 
 ### Twilio
 
 SwitchBoard uses Twilio for phone numbers, calls and text messages.
 
-**Key type: Standard.** Twilio keys do not have individual permissions. A Standard key can do everything SwitchBoard needs and cannot manage your account or other keys, which makes it the safest choice.
+**Key type: Standard.** Standard keys have no permission settings. A Standard key can do everything SwitchBoard needs and cannot manage your account or other keys, which makes it the safest choice.
 
 1. Sign in to the [Twilio Console](https://console.twilio.com).
 2. Open **Account**, then **API keys & tokens**, and click **Create API key**.
@@ -113,7 +113,7 @@ SwitchBoard can use Amazon Polly to read text aloud, Amazon Transcribe to turn r
 }
 ```
 
-For summaries, the Bedrock model chosen under **Settings > AI > AI Providers** must also be available to your account in that region. Check this under **Model access** in the Amazon Bedrock console.
+For summaries, the Bedrock model chosen under **Settings > AI > AI Providers** must be offered in that region. Amazon Bedrock turns a model on for your account the first time it is used, and that first use needs more than this policy allows: for models sold through AWS Marketplace, such as Anthropic's, it needs `aws-marketplace:Subscribe` and `aws-marketplace:ViewSubscriptions`, and Anthropic models also ask for a one-time use case form. The simplest way is for an AWS administrator to open the model once in the Amazon Bedrock console playground. After that, the key above is enough.
 
 ### OpenAI
 
@@ -124,7 +124,7 @@ SwitchBoard can use OpenAI to transcribe recordings, write summaries and run AI 
 | Permission | Access | What SwitchBoard uses it for |
 |---|---|---|
 | List models | Read | Checking that the key works |
-| Model capabilities | Request | Transcribing recordings, writing summaries, and running AI agent calls on GPT-Live |
+| Model capabilities | Write | Transcribing recordings, writing summaries, and running AI agent calls on GPT-Live |
 | Webhooks | Write | Only for AI agents on GPT-Live: OpenAI tells SwitchBoard when a call arrives |
 
 1. Sign in at [platform.openai.com](https://platform.openai.com) and choose the project from the project menu.
@@ -134,7 +134,7 @@ SwitchBoard can use OpenAI to transcribe recordings, write summaries and run AI 
 5. For AI agents on GPT-Live, also copy the **Project ID** from the project's settings. It starts with `proj_`.
 6. In SwitchBoard, paste the key, and the project ID if asked.
 
-If OpenAI refuses requests with a "missing scopes" error, open the key and check that **Model capabilities** is set to **Request**.
+If OpenAI refuses requests with a "missing scopes" error, open the key and check that **Model capabilities** is set to **Write**.
 
 ### Anthropic
 
@@ -172,7 +172,7 @@ SwitchBoard uses ElevenLabs to set up and run AI agents that answer calls.
 When you set up an AI agent, SwitchBoard checks each permission and tells you which one is missing.
 
 <p align="center">
-  <img src="./../../images/docs/integrations/aiagent-elevenlabs-howto.png" />
+  <img src="./../../images/docs/integrations/aiagent-elevenlabs-howto.png" alt="The ElevenLabs how-to panel on the AI agent page, with a link to this guide" />
 </p>
 
 ### If a key stops working
