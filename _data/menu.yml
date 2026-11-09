@@ -73,5 +73,8 @@
       - title: "Answers and Question Sets"
         link: /docs/switchboard/question_sets
 
+      - title: "API Integrations"
+        link: /docs/switchboard/integrations
+
       - title: "Competitors"
         link: /docs/switchboard/competitors
