@@ -57,17 +57,24 @@ SwitchBoard can use Amazon Polly to read text aloud, Amazon Transcribe to turn r
 |---|---|---|
 | Amazon Polly | `polly:SynthesizeSpeech`, `polly:DescribeVoices` | Reading text aloud, for example greetings and announcements |
 | Amazon Transcribe | `transcribe:StartTranscriptionJob`, `transcribe:GetTranscriptionJob` | Turning recordings into text |
-| Amazon S3 | `s3:PutObject`, `s3:GetObject`, `s3:ListBucket`, `s3:CreateBucket` | Holding a recording in the transcription bucket while Transcribe works on it |
+| Amazon S3 | `s3:PutObject`, `s3:GetObject`, `s3:ListBucket`, `s3:CreateBucket` | Holding a recording in your transcription bucket while Transcribe works on it |
 | Amazon Bedrock | `bedrock:InvokeModel` | Writing call summaries |
 | Amazon Comprehend | `comprehend:DetectSentiment` | Rating the sentiment of a call |
 
-1. Sign in to the AWS console and open **IAM**.
-2. Under **Policies**, click **Create policy**, open the **JSON** tab and paste the policy below. Replace `YOUR-BUCKET` with your transcription bucket. SwitchBoard uses `switchboard-transcribe-bucket` unless your SwitchBoard contact set a different one for you.
+1. If you will transcribe with Amazon Transcribe, open **S3** in the AWS console and create a bucket for SwitchBoard, in the same region you will choose in step 7. Bucket names are shared by every AWS account, so pick one that is yours, for example *acme-switchboard-transcripts*.
+2. Open **IAM**. Under **Policies**, click **Create policy**, open the **JSON** tab and paste the policy below. Replace `YOUR-BUCKET` with your bucket name, or remove the two bucket sections if you do not use Amazon Transcribe.
 3. Name the policy, for example *SwitchBoard*, and create it.
 4. Under **Users**, create a user, for example *switchboard*, and attach the policy to it. It does not need console access.
 5. Open the user, go to **Security credentials**, and click **Create access key**. Choose **Application running outside AWS**.
 6. Copy the **Access key ID** and the **Secret access key**. AWS shows the secret only once.
 7. In SwitchBoard, paste both and choose the **Region** where you use these services.
+8. If you created a bucket in step 1, tell SwitchBoard its name: go to **Settings > AI > AI Providers**, click the edit (pencil) button on the AWS provider that transcribes, open **Advanced settings**, and enter this in **Advanced options (JSON)**, with your bucket name:
+
+   ```json
+   {"s3Bucket": "acme-switchboard-transcripts"}
+   ```
+
+   Without it, SwitchBoard looks for a bucket with a default name that your account cannot own, and transcriptions fail.
 
 ```json
 {
