@@ -7,7 +7,7 @@ layout: docs
 ## Record your Calls
 
 
-To access your call Recordings, go to the `Recordings` menu option.
+To access your call Recordings, go to `Calls` -> `Recordings` in the left menu.
 
 
 ![Screenshot: Recordings](./../../images/docs/recordings/recording.png)

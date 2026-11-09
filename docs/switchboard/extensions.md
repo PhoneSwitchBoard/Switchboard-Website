@@ -7,7 +7,7 @@ layout: docs
 ## Agents
 
 
-Only if you are a user with Administrator access, you will be able to see the Admin Menu option. To create and configure Agents, Go to `Admin` -> `Agents`, in that page you will be able to change the password of an agent, enabling or disabling, among other options.
+Only administrators can manage agents. To create and configure Agents, go to `Settings` -> `Users & Devices` -> `Agents`; in that page you will be able to change the password of an agent, enabling or disabling, among other options.
 
 
 ![Screenshot: Agents](./../../images/docs/extensions/agent.png)
@@ -22,7 +22,7 @@ Use the `Create Agent` button to easily add a new agent. Please note that an age
 ## View list of Extensions or Endpoints
 
 
-Go to the menu option `Admin` -> `Extensions`, where you will find a list of all the existing extensions and their current connection status to the telephone system.
+Go to `Settings` -> `Users & Devices` -> `Extensions`, where you will find a list of all the existing extensions and their current connection status to the telephone system.
 
 
 ![Screenshot: Extensions](./../../images/docs/extensions/extension.png)
@@ -30,7 +30,7 @@ Go to the menu option `Admin` -> `Extensions`, where you will find a list of all
 
 ## Create new Local Extension
 
-To create a new extension to your agent, from which you are logged in, go to the Menu option: `User Settings`.
+To create a new extension to your agent, from which you are logged in, open your account menu at the bottom of the left menu and choose `My Settings`.
 
 
 ![Screenshot: Create New Extension](./../../images/docs/extensions/create_extension.png)
@@ -40,7 +40,7 @@ To create a new extension to your agent, from which you are logged in, go to the
 
 You can also use your mobile phone to make and receive calls from the **Switchboard Cloud™** interface. We recommend using a phone connected to the local network, but if you are out of the office one day you can use your cell phone and stay connected to the phone system.
 
-To create a mobile extension go to `User Settings` -> `Create Extension`. Choose Mobile type, with any of the prefixes (but you cannot have more than one mobile extension with the same prefix). Note that the resulting extension number will be = the prefix + agent number.
+To create a mobile extension go to `My Settings` -> `Create Extension`. Choose Mobile type, with any of the prefixes (but you cannot have more than one mobile extension with the same prefix). Note that the resulting extension number will be = the prefix + agent number.
 
 
 ![Screenshot: Remote Extension](./../../images/docs/extensions/mobile_extension.png)

@@ -7,7 +7,7 @@ layout: docs
 ## Outbound Routes
 
 
-Outbound Routes are available in the Menu option `Asterisk Settings` -> `Outbound Routes`, only for administrator users.
+Outbound Routes are available under `Settings` -> `Phone System` -> `Outbound Routes`, only for administrator users.
 
 An **outbound route** is used to tell the **PBX** how to process outbound calls and which **trunk** to use. Every time a user dials a number, the **PBX** will compare the dialed number with different patterns that we have defined as Rules or Outbound Routes.
 

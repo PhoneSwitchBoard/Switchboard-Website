@@ -7,7 +7,7 @@ layout: docs
 ## Call recording
 
 
-To access your Call Records, go to the `Call records` menu option.
+To access your Call Records, go to `Calls` -> `Call Records` in the left menu.
 
 
 ![Screenshot: Call Records](./../../images/docs/call_records/call_record.png)
