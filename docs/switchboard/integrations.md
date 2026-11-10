@@ -126,17 +126,19 @@ For summaries, the Bedrock model chosen under **Settings > AI > AI Providers** m
 
 SwitchBoard can use OpenAI to transcribe recordings, write summaries and run AI agents on GPT-Live.
 
-**Key type: a project key.** Create it in the OpenAI project that should be billed. A key with **All** permissions works. If you choose **Restricted**, allow:
+**Key type: a project key.** Create it in the OpenAI project that should be billed.
+
+- **AI agents on GPT-Live** need a key with **All** permissions. OpenAI tells SwitchBoard when a call arrives through a webhook, and a **Restricted** key cannot be given access to webhooks.
+- **Transcription and summaries** work with **All**, or with a **Restricted** key that allows:
 
 | Permission | Access | What SwitchBoard uses it for |
 |---|---|---|
 | List models | Read | Checking that the key works |
-| Model capabilities | Request | Transcribing recordings, writing summaries, and running AI agent calls on GPT-Live |
-| Webhooks | Write | Only for AI agents on GPT-Live: OpenAI tells SwitchBoard when a call arrives |
+| Model capabilities | Request | Transcribing recordings and writing summaries |
 
 1. Sign in at [platform.openai.com](https://platform.openai.com) and choose the project from the project menu.
 2. Open **Settings**, then **API keys**, and click **Create new secret key**.
-3. Give it a name, for example *SwitchBoard*, and choose **All** or **Restricted**. For Restricted, set the permissions in the table above and leave the rest at **None**.
+3. Give it a name, for example *SwitchBoard*, and choose **All** or **Restricted**. For GPT-Live agents, choose **All**. For Restricted, set the permissions in the table above and leave the rest at **None**.
 4. Copy the key. OpenAI shows it only once.
 5. For AI agents on GPT-Live, also copy the **Project ID** from the project's settings. It starts with `proj_`.
 6. In SwitchBoard, paste the key, and the project ID if asked.
