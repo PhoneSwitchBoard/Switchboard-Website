@@ -131,7 +131,7 @@ SwitchBoard can use OpenAI to transcribe recordings, write summaries and run AI 
 | Permission | Access | What SwitchBoard uses it for |
 |---|---|---|
 | List models | Read | Checking that the key works |
-| Model capabilities | Write | Transcribing recordings, writing summaries, and running AI agent calls on GPT-Live |
+| Model capabilities | Request | Transcribing recordings, writing summaries, and running AI agent calls on GPT-Live |
 | Webhooks | Write | Only for AI agents on GPT-Live: OpenAI tells SwitchBoard when a call arrives |
 
 1. Sign in at [platform.openai.com](https://platform.openai.com) and choose the project from the project menu.
@@ -141,7 +141,7 @@ SwitchBoard can use OpenAI to transcribe recordings, write summaries and run AI 
 5. For AI agents on GPT-Live, also copy the **Project ID** from the project's settings. It starts with `proj_`.
 6. In SwitchBoard, paste the key, and the project ID if asked.
 
-If OpenAI refuses requests with a "missing scopes" error, open the key and check that **Model capabilities** is set to **Write**.
+If OpenAI refuses requests with a "missing scopes" error, open the key and check that **Model capabilities** is set to **Request**. Set the **Model capabilities** row itself, not only some of the sub-items under it.
 
 ### Anthropic
 
