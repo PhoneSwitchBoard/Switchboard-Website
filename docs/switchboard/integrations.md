@@ -39,7 +39,7 @@ SwitchBoard uses Twilio for phone numbers, calls and text messages.
 **Key type: Standard.** Standard keys have no permission settings. A Standard key can do everything SwitchBoard needs and cannot manage your account or other keys, which makes it the safest choice.
 
 1. Sign in to the [Twilio Console](https://console.twilio.com).
-2. Open **Account**, then **API keys & tokens**, and click **Create API key**.
+2. Open **Settings**, then **Account settings**, then **API keys and auth tokens**, and click **Create API key**.
 3. Give it a name, for example *SwitchBoard*, and choose the **Standard** key type.
 4. Copy the **SID** and the **Secret**. Twilio shows the secret only once.
 5. In SwitchBoard, enter your **Account SID** (from the Twilio Console home page, it starts with `AC`), the key **SID** (it starts with `SK`) and the **Secret**.
@@ -64,7 +64,7 @@ SwitchBoard can use Amazon Polly to read text aloud, Amazon Transcribe to turn r
 1. If you will transcribe with Amazon Transcribe, open **S3** in the AWS console and create a bucket for SwitchBoard, in the same region you will choose in step 7. Bucket names are shared by every AWS account, so pick one that is yours, for example *acme-switchboard-transcripts*.
 2. Open **IAM**. Under **Policies**, click **Create policy**, open the **JSON** tab and paste the policy below. Replace `YOUR-BUCKET` with your bucket name, or remove the two bucket sections if you do not use Amazon Transcribe.
 3. Name the policy, for example *SwitchBoard*, and create it.
-4. Under **Users**, create a user, for example *switchboard*, and attach the policy to it. It does not need console access.
+4. Under **IAM users**, create a user, for example *switchboard*, and attach the policy to it. It does not need console access.
 5. Open the user, go to **Security credentials**, and click **Create access key**. Choose **Application running outside AWS**.
 6. Copy the **Access key ID** and the **Secret access key**. AWS shows the secret only once.
 7. In SwitchBoard, paste both and choose the **Region** where you use these services.
@@ -137,7 +137,7 @@ SwitchBoard can use OpenAI to transcribe recordings, write summaries and run AI 
 | Model capabilities | Request | Transcribing recordings and writing summaries |
 
 1. Sign in at [platform.openai.com](https://platform.openai.com) and choose the project from the project menu.
-2. Open **Settings**, then **API keys**, and click **Create new secret key**.
+2. In the menu on the left, open **API keys** and click **Create new secret key**.
 3. Give it a name, for example *SwitchBoard*, and choose **All** or **Restricted**. For GPT-Live agents, choose **All**. For Restricted, set the permissions in the table above and leave the rest at **None**.
 4. Copy the key. OpenAI shows it only once.
 5. For AI agents on GPT-Live, also copy the **Project ID** from the project's settings. It starts with `proj_`.
@@ -165,15 +165,15 @@ SwitchBoard uses ElevenLabs to set up and run AI agents that answer calls.
 
 | Permission | Access | What SwitchBoard uses it for |
 |---|---|---|
-| ElevenAgents | Read and write | Creating the agent, connecting its phone line and keeping it up to date |
+| ElevenAgents | Write | Creating the agent, connecting its phone line and keeping it up to date |
 | Webhooks | Access | Sending each finished call back to SwitchBoard |
 | Voices | Read | Listing the voices you can choose from |
-| User | Read | Showing your plan and the credits left |
+| User | Access | Showing your plan and the credits left |
 
 1. Sign in to [ElevenLabs](https://elevenlabs.io/app) and open **Developers**, then **API keys**.
 2. Click **Create key**, name it *SwitchBoard*, and turn on **Restrict key**.
 3. Turn on the four permissions above, at the access shown, and leave everything else off.
-4. Recommended: set a credit limit on the key, so a problem with calls can never use up the whole account.
+4. Recommended: set a credit limit on the key (per credit refresh period; it starts as unlimited), so a problem with calls can never use up the whole account.
 5. If you restrict the key to IP addresses, include your SwitchBoard's address. The AI agent setup screen shows it.
 6. Copy the key. ElevenLabs shows it only once.
 7. In SwitchBoard, paste the key under **API Integrations**, or while setting up an AI agent under **Settings > AI > AI Agents**.
