@@ -68,13 +68,9 @@ SwitchBoard can use Amazon Polly to read text aloud, Amazon Transcribe to turn r
 5. Open the user, go to **Security credentials**, and click **Create access key**. Choose **Application running outside AWS**.
 6. Copy the **Access key ID** and the **Secret access key**. AWS shows the secret only once.
 7. In SwitchBoard, paste both and choose the **Region** where you use these services.
-8. If you created a bucket in step 1, tell SwitchBoard its name: go to **Settings > AI > AI Providers**, click the edit (pencil) button on the AWS provider that transcribes, open **Advanced settings**, and enter this in **Advanced options (JSON)**, with your bucket name:
+8. If you created a bucket in step 1, tell SwitchBoard its name: go to **Settings > AI > AI Providers**, click the edit (pencil) button on the AWS provider that transcribes, enter the bucket name in **Transcription bucket** on the Transcription card, and click **Save**. The field appears when the engine is **AWS Transcribe**.
 
-   ```json
-   {"s3Bucket": "acme-switchboard-transcripts"}
-   ```
-
-   Without it, SwitchBoard looks for a bucket with a default name that your account cannot own, and transcriptions fail.
+   Without it, SwitchBoard looks for a bucket with a default name that your account cannot own, and transcriptions fail. If the bucket does not exist yet, saving creates it. If saving shows a warning about the bucket, it says what to fix: another AWS account owns that name, the key's policy does not include the bucket, or the access key itself is wrong.
 
 ```json
 {
