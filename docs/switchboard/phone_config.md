@@ -28,6 +28,19 @@ Go to the Account tab and use the following image as a reference to configure yo
 * The Server host is the IP address where your **Asterisk®** service is installed. In this example we use a local IP address, ideal for the case in which your VoIP phone is connected to your company's local network, normally via a wired network connection.
 
 
+### Show who you are talking to after a transfer
+
+When someone transfers a call to you, your phone shows the person you are now talking to.
+
+When you are the one who stays on the call while it is transferred, the person on the other end changes during the call. **Switchboard Cloud™** sends your phone the new person's name and number, but most phones only show them once they are set to:
+
+* **Yealink**: on the phone's configuration page, go to `Account` -> `Advanced`, set `Caller ID Source` to `PAI-FROM`, and click `Confirm`. With the default, `FROM`, the phone keeps showing the person the call started with.
+* **Microsip**: keeps showing the person the call started with, and has no setting to change this. The call itself is not affected.
+* **Switchboard Cloud™ Web Phone**: updates on its own.
+
+If a phone has trouble with this update, an administrator can turn it off for that extension with the `Send PAI` setting. See [Extensions](./extensions#show-the-current-caller-after-a-transfer-send-pai).
+
+
 ## Set Up a Soft Phone
 
 You can choose between the different brands of Softphones available on the market.
