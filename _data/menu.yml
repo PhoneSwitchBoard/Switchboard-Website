@@ -37,6 +37,9 @@
       - title: "Queues"
         link: /docs/switchboard/queues
 
+      - title: "External Numbers"
+        link: /docs/switchboard/external_numbers
+
       - title: "Agents and Extensions"
         link: /docs/switchboard/extensions
 
