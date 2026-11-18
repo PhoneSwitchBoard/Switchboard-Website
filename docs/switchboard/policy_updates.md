@@ -12,7 +12,7 @@ For a material change to the Terms of Service, we give at least 30 days' notice 
 
 ## SwitchBoard 1.21
 
-**Takes effect:** [date]
+**Takes effect:** November 9, 2026
 
 SwitchBoard 1.21 adds answer extraction, the Ask SwitchBoard assistant and OpenAI as a second provider for AI agents. The policies now describe them. They also name every provider a customer can choose to connect, including ones that SwitchBoard 1.20 could already use.
 
