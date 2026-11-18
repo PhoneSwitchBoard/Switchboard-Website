@@ -35,3 +35,19 @@ An inbound route can send calls straight to an outside phone number, for example
 <p align="center">
   <img src="./../../images/docs/inbound_routes/inbound_route_external_number.png" />
 </p>
+
+## Show the caller's contact name on phones
+
+*Available from SwitchBoard 1.22.0.*
+
+An inbound route can look each caller up in your **Contacts** as the call arrives, so agents see who is calling before they answer. Edit the inbound route, tick **Show contact name on phones** and click **Update**.
+
+- When exactly one contact has the caller's number, the agents' phones show that contact's name.
+- When several contacts share the number, or no contact has it, the phones show the name the phone network sends, as before.
+- The setting is off on every route until you turn it on.
+
+<p align="center">
+  <img src="./../../images/docs/inbound_routes/inbound_route_show_contact_name.png" />
+</p>
+
+This setting is available when Caller Verification is turned on for your SwitchBoard. To have it turned on, contact support.

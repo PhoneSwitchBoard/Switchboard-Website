@@ -55,3 +55,24 @@ To send calls nobody answers to an outside number, such as an answering service,
 *Available from SwitchBoard 1.22.0.*
 
 When a queue rings a member on their mobile, through a remote extension, they hear a short prompt when they pick up and press **1** to accept the call. The call becomes theirs only once they press 1: from then on they show as on a call, and the call record and any transcript are credited to them. If they pick up but don't press 1, and someone else in the queue takes the call, the call is credited to the person who took it.
+
+## Email the team when a call enters a queue
+
+*Available from SwitchBoard 1.21.0. The subject format below is from SwitchBoard 1.22.0.*
+
+A queue can send an email each time an outside call enters it, so the team knows who is waiting even before anyone answers. On the queue's settings, turn on **Send Email** and list the addresses under **Email Recipients**, separated by commas.
+
+<p align="center">
+  <img src="./../../images/docs/queues/queue_send_email.png" />
+</p>
+
+The email names the caller from your Contacts, says whether they were verified and lists their customer IDs. Its subject tells the cases apart, so mail rules and ticketing tools can sort the emails. For a queue named Support:
+
+| Caller | Subject |
+|---|---|
+| One contact has the number | Incoming Support Call from Ana Pin - A5001 |
+| One contact, with no customer ID | Incoming Support Call from Ana Pin |
+| Several contacts share the number | Incoming Support Call from (Guess) Ana Pin - A5001 - +14155550101 |
+| No contact has the number | Incoming Support Call from an Unknown Caller +14155550101 |
+
+(Guess) marks the first of the contacts that share the number. The caller may be any of them.
