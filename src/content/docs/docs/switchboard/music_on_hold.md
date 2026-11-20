@@ -22,11 +22,13 @@ Audio files can be MP3, WAV, M4A, OGG, FLAC or another common audio format, up t
 
 ## Create a music class
 
+Upload the audio first: **Upload a new audio file** on the class page opens the Audio Files page and leaves the class unsaved.
+
 1. Go to **Settings > Audio > Music on Hold** and click **New Music Class**.
 2. Give it a **Name** and, if you like, a **Description**.
-3. Under **Tracks**, choose a file from **Add an audio file…** and click **Add**, or choose **Upload a new audio file** to add one you don't have yet. Drag the tracks into the order you want.
+3. Under **Tracks**, choose a file from **Add an audio file…** and click **Add**. Repeat for each track, then drag them into the order you want.
 4. Choose the **Playback order**: **In order** plays the tracks as listed, **Shuffle** picks a random track each time.
-5. Save.
+5. Click **Create**.
 
 Changes apply to the next call that goes on hold. Nothing needs to be restarted.
 
@@ -36,23 +38,25 @@ A class keeps the **Class name** it was created with, so renaming it later does 
 
 ### Queues
 
-Each queue has its own **Music on Hold** setting on the queue's page. It plays while a caller waits in the queue, and while an agent has them on hold afterwards. See [Queues](/docs/switchboard/queues/).
+Each queue has its own **Music on Hold** setting on the queue's page. It plays while a caller waits in the queue, and while an agent has them on hold afterwards. 
 
 ### Parked calls and conferences
 
 Open the **Where it plays** tab on the Music on Hold page:
 
 - **Parked calls**: the class every parking slot plays. Saving reloads the parking settings, so a caller already parked may hear the music start again.
-- **Conferences**: set under **Settings > System > General Settings**, on the **Conferences** tab. It plays while a participant waits alone, when **Play hold music to the first person in** is on. With it off, they hear silence until someone else joins. See [Conferences](/docs/switchboard/conferences/).
+- **Conferences**: from 1.20.0, set in the **Music** field under **Settings > System > General Settings**, on the **Conferences** tab. It plays while a participant waits alone, when **Play hold music to the first person in** is on; with it off, they hear silence until someone else joins. A class with no tracks can't be chosen there. In 1.19.x, the conference class is chosen on the **Where it plays** tab. See [Conferences](/docs/switchboard/conferences/).
 
-Anything you don't set plays the built-in **Default** class.
+Anything you don't set plays the built-in class, listed as **default**.
 
 ## Change the built-in music
 
-The **Default** class is what callers hear wherever you have not chosen something else. Add your own tracks to it to replace the built-in music everywhere at once. Remove them all and the built-in music comes back. The Default class keeps its name and cannot be deleted.
+The **default** class is what callers hear wherever you have not chosen something else. Add your own tracks to it to replace the built-in music everywhere at once. Remove them all and the built-in music comes back. It keeps its name and cannot be deleted.
+
+If your phone system was already using other hold music classes before 1.19.0, they are listed as **Built-in** too, and cannot be deleted either.
 
 ## Delete a music class
 
-A class can only be deleted when nothing uses it. Its page lists what does under **Used by**, such as queue hold music, parked calls or conferences. Choose another class there first.
+A class can only be deleted when nothing uses it. Its page lists what does under **Used by**, such as queue hold music, parked calls or conferences. Choose another class there first. A class can also be used by an inbound route or a find-me/follow-me setting, which no screen changes yet; ask your SwitchBoard contact to move those.
 
-If a track's audio file has been deleted, the class shows it as **Missing**. Remove the track or upload the audio again.
+An audio file can't be deleted while a class uses it: remove it from the class first. If a track's audio is no longer on the server, the class shows it as **Missing**. Remove the track or upload the audio again.
