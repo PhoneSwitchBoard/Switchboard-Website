@@ -126,6 +126,7 @@ export default defineConfig({
             { label: 'Agents and Extensions', slug: page('switchboard', 'extensions') },
             { label: 'Set Up VoIP Phones', slug: page('switchboard', 'phone_config') },
             { label: 'Queues', slug: page('switchboard', 'queues') },
+            { label: 'Music on Hold', slug: page('switchboard', 'music_on_hold') },
             { label: 'External Numbers', slug: page('switchboard', 'external_numbers') },
             { label: 'Conferences', slug: page('switchboard', 'conferences') },
             { label: 'Voicemails', slug: page('switchboard', 'voicemails') },
