@@ -6,6 +6,13 @@ import remarkVersionBadge from './src/plugins/remark-version-badge.mjs';
 /** @param {'startcloud' | 'switchboard'} section @param {string} slug */
 const page = (section, slug) => `docs/${section}/${slug}`;
 
+// Draft pages are left out of production builds, so their URLs redirect to the docs home there.
+// In `astro dev` drafts still render, so writers can work on them; no redirect is added.
+const isBuild = process.argv.includes('build');
+/** @param {string[]} paths */
+const hiddenUntilRewrite = (paths) =>
+  isBuild ? Object.fromEntries(paths.map((p) => [`/docs/${p}`, '/docs/'])) : {};
+
 export default defineConfig({
   site: 'https://docs.switchboard.cloud',
   markdown: {
@@ -35,12 +42,25 @@ export default defineConfig({
     '/blog/turbodial': 'https://www.switchboard.cloud/blog',
     '/blog/twilio_advantages': 'https://www.switchboard.cloud/blog',
     '/blog/voip_save_money': 'https://www.switchboard.cloud/blog',
+    // Hidden until #4: these pages are drafts with outdated content. Remove this block
+    // (and their draft: true) when the Launch an Instance rewrite is ready.
+    ...hiddenUntilRewrite([
+      'startcloud/before_launch',
+      'startcloud/first_steps',
+      'startcloud/cloud_providers',
+      'startcloud/ssh_key',
+      'startcloud/integrations',
+      'startcloud/twilio',
+      'startcloud/microsoft',
+      'startcloud/launch',
+      'switchboard/sign_in',
+    ]),
   },
   integrations: [
     starlight({
       title: 'SwitchBoard Cloud™ Docs',
       description:
-        'How to launch, configure and use SwitchBoard Cloud™, the cloud PBX phone system by STARTcloud™.',
+        'How to configure and use SwitchBoard Cloud™, the cloud PBX phone system by STARTcloud™.',
       logo: { src: './src/assets/logo-mark.svg', alt: 'SwitchBoard Cloud' },
       // Same icon as switchboard.cloud (the Wix site), self-hosted in public/.
       favicon: '/favicon-32x32.png',
@@ -73,23 +93,28 @@ export default defineConfig({
       ],
       sidebar: [
         { label: 'Introduction', link: '/docs/' },
-        {
-          label: 'Launch an Instance',
-          items: [
-            { label: 'Overview', slug: page('startcloud', 'before_launch') },
-            { label: 'First Steps', slug: page('startcloud', 'first_steps') },
-            { label: 'Cloud Providers', slug: page('startcloud', 'cloud_providers') },
-            { label: 'SSH Keys', slug: page('startcloud', 'ssh_key') },
-            { label: 'Integrations', slug: page('startcloud', 'integrations') },
-            { label: 'Twilio Connect', slug: page('startcloud', 'twilio') },
-            { label: 'Microsoft 365', slug: page('startcloud', 'microsoft') },
-            { label: 'Launch Your Instance', slug: page('startcloud', 'launch') },
-          ],
-        },
+        // Hidden until #4: shown only in `astro dev`, so writers can reach the draft pages.
+        ...(isBuild
+          ? []
+          : [
+              {
+                label: 'Draft: Launch an Instance',
+                items: [
+                  { label: 'Overview', slug: page('startcloud', 'before_launch') },
+                  { label: 'First Steps', slug: page('startcloud', 'first_steps') },
+                  { label: 'Cloud Providers', slug: page('startcloud', 'cloud_providers') },
+                  { label: 'SSH Keys', slug: page('startcloud', 'ssh_key') },
+                  { label: 'Integrations', slug: page('startcloud', 'integrations') },
+                  { label: 'Twilio Connect', slug: page('startcloud', 'twilio') },
+                  { label: 'Microsoft 365', slug: page('startcloud', 'microsoft') },
+                  { label: 'Launch Your Instance', slug: page('startcloud', 'launch') },
+                  { label: 'Sign In', slug: page('switchboard', 'sign_in') },
+                ],
+              },
+            ]),
         {
           label: 'Get Started',
           items: [
-            { label: 'Sign In', slug: page('switchboard', 'sign_in') },
             { label: 'Finding Your Way Around', slug: page('switchboard', 'navigation') },
             { label: 'Interface Configuration', slug: page('switchboard', 'interface_config') },
             { label: 'Internationalization', slug: page('switchboard', 'i18n') },

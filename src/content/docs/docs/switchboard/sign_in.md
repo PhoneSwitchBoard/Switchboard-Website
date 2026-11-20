@@ -1,5 +1,6 @@
 ---
 title: "How to access your phone interface?"
+draft: true
 ---
 
 If you already have your own **Switchboard Cloud™** instance, your phone system is ready to be configured. Follow this guide to log in and start setting up your phone system from scratch so you can make and receive calls.

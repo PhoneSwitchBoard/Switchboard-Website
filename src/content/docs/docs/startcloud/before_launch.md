@@ -1,5 +1,6 @@
 ---
 title: "How to Launch a Switchboard Cloud™ Instance"
+draft: true
 ---
 
 To launch a **Switchboard Cloud™** instance, leverage the capabilities of **STARTcloud™**, an Application Marketplace tailored for deploying software solutions like **Switchboard Cloud™** across major cloud platforms such as AWS and Azure.

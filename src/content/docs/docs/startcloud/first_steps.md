@@ -1,5 +1,6 @@
 ---
 title: "First Steps on STARTcloud™"
+draft: true
 ---
 
 ## Sign Up to STARTcloud™
