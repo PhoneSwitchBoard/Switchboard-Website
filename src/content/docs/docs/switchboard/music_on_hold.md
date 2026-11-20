@@ -10,6 +10,8 @@ Your own music is arranged in **music classes**: named playlists built from your
 
 Music on Hold is under **Settings > Audio > Music on Hold** and is open to administrators.
 
+Menu names on this page are those of SwitchBoard 1.21.0 and later. In 1.19.0 and 1.20.0, **Audio Files** and **Music on Hold** are under **Tools** in the menu.
+
 ## Upload your audio
 
 Go to **Settings > Audio > Audio Files**, click **New Audio File**, give it a **Name** and upload the file, or record it in the browser.
