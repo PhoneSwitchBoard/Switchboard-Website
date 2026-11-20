@@ -7,9 +7,9 @@ title: Caller Verification
 **Caller Verification** recognises callers from their phone number and, for contacts that need it, asks for a support PIN before the call goes on. A verified caller can go straight to their team, while everyone else goes somewhere else, such as the general queue. Agents see on the call how the caller was verified.
 
 :::note
-Caller Verification is switched on per phone system. If you don't see **Caller Verification** under **Settings > Phone System**, ask your SwitchBoard contact to enable it.
+Caller Verification is switched on per phone system. If you don't see **Caller Verification** under **Settings > Phone System**, contact support to have it turned on.
 
-Menu names on this page are those of SwitchBoard 1.21.0 and later. In 1.20.0, Caller Verification is under **Admin > Routing**.
+Menu names on this page are those of SwitchBoard 1.21.0 and later. In 1.20.0 the configuration pages are in the **Admin** menu: Caller Verification is under **Admin > Routing**.
 :::
 
 ## How a caller is verified
@@ -18,12 +18,12 @@ When a call reaches a Caller Verification step, SwitchBoard looks up the caller'
 
 - **One contact has the number and doesn't require a PIN:** the caller is identified straight away.
 - **The contact requires a PIN:** the caller hears the PIN prompt and types their PIN. A caller whose PIN is shorter than the PIN length presses **#** to finish.
-- **Several contacts share the number:** the caller is asked for a PIN, and becomes the contact whose PIN they enter.
+- **Several contacts share the number:** the caller is asked for a PIN, and becomes the contact whose PIN they enter. Only contacts with a PIN can be identified this way.
 - **No contact has the number:** the caller is not identified, unless you let callers enter a registered number (see [Callers phoning from another number](#callers-phoning-from-another-number)).
 
 The call then goes to the step's **When Identified** or **When Not Identified** destination.
 
-The caller is also not identified, without being asked for a PIN, when the contact requires a PIN but has none set, when more contacts share the number than the step allows, or when the number has had too many wrong PINs that day.
+The caller is also not identified, without being asked for a PIN, when the contact requires a PIN but has none set, when several contacts share the number and none of them has a PIN, when more contacts share the number than the step allows, or when the number has had too many wrong PINs in the last 24 hours.
 
 ## Give a contact a PIN
 
@@ -35,7 +35,7 @@ Administrators and agents set PINs on the contact itself:
 
 These settings are saved straight away, separately from the contact's **Save** button. A PIN is never shown again once set: use **Change PIN** or **Remove PIN**.
 
-Contacts that come from another system, such as Clio or QuickBooks, can still have a PIN set here, even though the rest of the contact can't be edited in SwitchBoard.
+Contacts that come from another system, such as Clio or QuickBooks, can still have a PIN set here, even though the rest of the contact can't be edited in SwitchBoard. Some sources manage the PIN themselves; their contacts say the PIN can only be changed at the source.
 
 ## Create a Caller Verification step
 
@@ -57,12 +57,12 @@ These prompts are used only for contacts that require a PIN, and when several co
 - **Final Failure Prompt** (1.22.0): plays once when the attempts run out, instead of the invalid-PIN prompt.
 - **PIN Length**: 3 to 8 digits.
 - **Attempts**: wrong PINs allowed before the call goes to **When Not Identified**.
-- **Failed PINs per Day**: how many wrong PINs a number may have in 24 hours before it is no longer asked. From 1.22.0 it can be left empty for no limit. A correct PIN resets the count.
+- **Failed PINs per Day**: how many wrong PINs a number may have in 24 hours before it is no longer asked. From 1.22.0 it can be left empty for no limit. A correct PIN resets the count for numbers found by caller ID.
 - **Contacts per Number**: the most contacts that may share one number. Above that, the caller is not asked for a PIN.
 
 ### When Identified and When Not Identified
 
-Choose where each kind of call goes: an agent, a queue, an IVR, a voicemail box, an announcement, a call flow control, a time condition, another Caller Verification step, or an AI agent. Leave the type empty to hang up.
+Choose where each kind of call goes: an agent, a queue, an IVR, a voicemail box, an announcement, a call flow control, a time condition, another Caller Verification step, or an AI agent (when AI agents are switched on). Choose **Hang Up** to end the call.
 
 Save the step. Its page lists each possible outcome and where it sends the call.
 
@@ -75,13 +75,13 @@ A customer may call from a mobile or a home phone that isn't on their contact. T
 - **Entered Number PIN Prompt** (1.22.0): asks for the PIN on this path. It defaults to the PIN prompt.
 - **Country**: entered numbers are read as numbers in this country, unless the caller also enters a country code.
 
-Callers enter the number, press **#**, then enter their PIN. The PIN is always required on this path, so contacts without a PIN can't be verified this way. A wrong number and a wrong PIN get the same answer, so callers can't find out which numbers are registered. Each phone gets at most 10 attempts a day on this path, even with no daily limit set.
+Callers enter the number, press **#**, then enter their PIN. The PIN is always required on this path, so contacts without a PIN can't be verified this way. A wrong number and a wrong PIN get the same answer, so callers can't find out which numbers are registered. Wrong attempts from the calling phone count towards **Failed PINs per Day**; when that is left empty, a phone still gets at most 10 wrong attempts in 24 hours on this path. A correct entry doesn't reset this count: failures expire 24 hours after they happen.
 
 ## Leave verification by pressing 0
 
 *Available from SwitchBoard 1.22.0.*
 
-Pressing **0** on its own at a number or PIN prompt leaves verification, and the call goes to **When Not Identified** within a few seconds. A PIN or number that starts with 0 still works.
+Pressing **0** on its own at the question, number or PIN prompt leaves verification, and the call goes to **When Not Identified**. This takes a few seconds, or up to 10 seconds at the number prompt in countries where phone numbers start with 0, such as the UK. A PIN or number that starts with 0 still works.
 
 ## Send calls to the step
 
