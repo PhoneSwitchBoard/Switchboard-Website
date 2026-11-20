@@ -2,8 +2,6 @@
 title: "Ask SwitchBoard"
 ---
 
-## Ask SwitchBoard
-
 *Available from SwitchBoard 1.21.0.*
 
 Ask SwitchBoard answers questions about your calls, voicemails, messages and contacts, in your own words. For example:

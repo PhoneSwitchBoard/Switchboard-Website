@@ -2,8 +2,6 @@
 title: "Voicemail"
 ---
 
-## Voicemail
-
 If you don't answer an incoming call, the caller can leave a voice message. You can access messages from your voicemail list in **Switchboard Cloud™** Dashboard.
 
 Select the message you want to listen to by clicking on it, and it will be loaded into the player.

@@ -2,8 +2,6 @@
 title: "Policy and Terms Updates"
 ---
 
-## Policy and Terms Updates
-
 This page summarises each change to the SwitchBoard Cloud™ [Privacy Policy](https://www.switchboard.cloud/privacy), [Terms of Service](https://www.switchboard.cloud/terms) and [Security Policy](https://www.switchboard.cloud/security), newest first. The pages on switchboard.cloud are the official text. This summary helps you see what changed and why.
 
 For a material change to the Terms of Service, we give at least 30 days' notice by email or in SwitchBoard, and the change takes effect at the start of your next renewal term (on the stated date for free trials). We also tell customers before a new service provider starts handling their data.

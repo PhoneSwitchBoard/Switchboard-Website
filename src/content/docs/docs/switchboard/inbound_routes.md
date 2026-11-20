@@ -2,8 +2,6 @@
 title: "Inbound Routes"
 ---
 
-## Inbound Routes
-
 The **Inbound routes** page is available only for administrator users, under `Settings` -> `Phone System` -> `Inbound Routes`. It allows you to configure which destination **Asterisk®** uses for inbound calls from **trunks**.
 
 ![Screenshot: Inbound Routes](/images/docs/inbound_routes/inbound_route.png)
@@ -15,7 +13,6 @@ In this way, in the system you can easily specify what to do when you receive a 
 3. Your phone system **IVR**, that "answering machine" that interacts with Users through the use of voice and **DTMF** tones input with a keypad.
 4. An **External number**: an outside phone number, such as an answering service or an AI receptionist. See below.
 
-<br>
 ![Screenshot: Edit Inbound Route](/images/docs/inbound_routes/inbound_route_edit.png)
 
 ![Screenshot: Create Inbound Route](/images/docs/inbound_routes/inbound_route_create.png)

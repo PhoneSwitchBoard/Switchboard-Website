@@ -2,8 +2,6 @@
 title: "Finding Your Way Around"
 ---
 
-## Finding your way around
-
 *Available from SwitchBoard 1.21.0.*
 
 The left menu has two parts: a short menu for everyday work, and a separate **Settings** area for configuring your phone system. You only see the pages your role allows.

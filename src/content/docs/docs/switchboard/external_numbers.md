@@ -2,8 +2,6 @@
 title: "External Numbers"
 ---
 
-## External Numbers
-
 *Available from SwitchBoard 1.22.0.*
 
 An external number is an outside phone number that SwitchBoard can send a call to. Once you add one, you can pick it wherever you choose where a call goes, just like a queue or a phone menu. For example:

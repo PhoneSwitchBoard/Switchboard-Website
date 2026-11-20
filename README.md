@@ -6,7 +6,7 @@ Source for [docs.switchboard.cloud](https://docs.switchboard.cloud), built with
 
 ## Run it locally
 
-Needs Node 22 or later.
+Needs Node 22.23.4 or later.
 
 ```sh
 npm ci

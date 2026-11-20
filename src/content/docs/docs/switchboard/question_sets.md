@@ -2,8 +2,6 @@
 title: "Answers and Question Sets"
 ---
 
-## Answers and question sets
-
 *Available from SwitchBoard 1.21.0.*
 
 A **question set** is a list of things you want captured from a call, such as the caller's account number, whether they asked for a callback, or the number to call them back on. When a call through a queue or AI agent with a question set is transcribed, SwitchBoard fills in the **answers** and shows them on the call record.

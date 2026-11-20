@@ -12,10 +12,11 @@ permissions:
   pages: write
   id-token: write
 
-# One deployment at a time; never cancel a production deploy that is already running.
+# Runs that deploy share one group, so production deploys never overlap and are never cancelled.
+# Pull request builds get a group per PR, and a newer push to the same PR replaces the older build.
 concurrency:
-  group: "pages-${{ github.event_name }}"
-  cancel-in-progress: false
+  group: ${{ github.event_name == 'pull_request' && format('pages-pr-{0}', github.event.pull_request.number) || 'pages' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   build:
