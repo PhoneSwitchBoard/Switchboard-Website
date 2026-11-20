@@ -144,6 +144,7 @@ export default defineConfig({
         {
           label: 'AI and Integrations',
           items: [
+            { label: 'AI Agents', slug: page('switchboard', 'ai_agents') },
             { label: 'Ask SwitchBoard', slug: page('switchboard', 'ask_switchboard') },
             { label: 'Answers and Question Sets', slug: page('switchboard', 'question_sets') },
             { label: 'API Integrations', slug: page('switchboard', 'integrations') },
