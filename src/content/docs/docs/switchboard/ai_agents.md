@@ -10,6 +10,8 @@ The conversation runs at an AI voice provider, **ElevenLabs** or **OpenAI GPT-Li
 
 :::note
 AI agents are switched on per phone system. If you don't see **AI Agents** under **Settings > AI**, ask your SwitchBoard contact to enable them. OpenAI GPT-Live is also switched on separately, on request.
+
+Menu names and settings on this page are those of SwitchBoard 1.21.0 and later. In 1.20.0, **AI Agents** is under **Admin > Live Operations**, the calls are under **Intelligence > AI Agent Calls**, and a saved key cannot be chosen when setting up an agent.
 :::
 
 ## Choose how to set up the agent
@@ -28,11 +30,11 @@ The agent is created in your ElevenLabs account and runs there. Calls use your E
 
 1. Create an API key in ElevenLabs with **Restrict key** turned on and only these permissions: **ElevenAgents** Write, **Webhooks** Access, **Voices** Read and **User** Access. The [ElevenLabs key guide](/docs/switchboard/integrations/#elevenlabs) has each step.
 2. If you limit the key to IP addresses, include your SwitchBoard's address. The setup screen shows it.
-3. Paste the key, give it a name if you like (for example *Support line*), and click **Check key**. SwitchBoard lists what the key can do and shows your plan and the credits left.
+3. Paste the key, give it a name if you like (for example *Support line*), and click **Check and save**. SwitchBoard lists what the key can do and shows your plan and the credits left. The key is saved only once it passes the check.
 
-![The Create the key in ElevenLabs panel on the setup screen, listing the four permissions the key needs](/images/docs/integrations/aiagent-elevenlabs-howto.png)
+![The Create the key in ElevenLabs panel on the setup screen, listing the four permissions the key needs](/images/docs/ai_agents/elevenlabs-howto.png)
 
-If you already saved an ElevenLabs key, choose it under **Use a saved key**. Keys are stored, encrypted, under **Settings > Integrations > API Integrations**, and each agent keeps the key it was set up with. Adding a new key never replaces the key another agent uses.
+If you already saved an ElevenLabs key, choose it under **Use this key** and click **Check key**. Keys are stored, encrypted, under **Settings > Integrations > API Integrations**, and each agent keeps the key it was set up with. Adding a new key never replaces the key another agent uses.
 
 :::caution
 When the account runs out of credits, ElevenLabs stops answering and calls go to the agent's fallback. If you set a credit limit on the key, calls also stop when the key reaches it, even with account credits left. SwitchBoard shows a warning when credits run low.
@@ -79,11 +81,16 @@ The agent runs on OpenAI's real-time voice model with your OpenAI account. Nothi
 2. Make sure GPT-Live phone calls are turned on for that project. If they are not, OpenAI refuses every call and callers go to the agent's fallback.
 3. Create an API key in the project with **All** permissions. A Restricted key cannot be given access to webhooks, which SwitchBoard needs to be told when a call arrives. The [OpenAI key guide](/docs/switchboard/integrations/#openai) has each step.
 4. Copy the **Project ID** from the project's settings. It starts with `proj_`.
-5. Paste the key and the project ID, then check them. SwitchBoard confirms that OpenAI accepts the key, that the project ID is valid, and that the key can read webhooks. Whether phone calls are on for the project is only confirmed by the first call.
+5. Paste the key and the project ID, and click **Check and save**. SwitchBoard confirms that OpenAI accepts the key, that the account has credit and that the key can read webhooks, and that the project ID looks like one (it starts with `proj_`). It cannot tell whether the ID is the right project, or whether phone calls are on for it: the first call shows that.
 
 ### 2. Describe the agent
 
-The same settings as for ElevenLabs (template, name, extension, greeting, instructions, questions, fallback and email), with two more under **How the agent thinks**:
+The same settings as for ElevenLabs (template, name, extension, greeting, instructions, questions, fallback and email), with two differences:
+
+- The agent asks the questions, and SwitchBoard reads the answers from the transcript afterwards. This needs automatic answer extraction to be on (see [Answers and Question Sets](/docs/switchboard/question_sets/)); with it off, calls are filed and emailed without answers.
+- The email has the answers and the full transcript, without a summary.
+
+Two more settings are under **How the agent thinks**:
 
 - **Reasoning model**: GPT-Live listens and speaks, and this model decides what to say. *GPT-6 Luna* is the fastest and lowest cost. *GPT-6 Sol* handles harder conversations, but answers more slowly and costs more.
 - **Reasoning effort**: more effort means fewer mistakes but longer pauses before the agent answers. *Low* suits most calls.
@@ -108,7 +115,7 @@ Use this when you build and manage the agent at your provider. SwitchBoard route
    - **Secure the connection**: enter the username, password and allowed source address in your provider's inbound settings, so it only accepts calls from your SwitchBoard.
    - **Send call records back to**: set this address as the agent's post-call webhook, and paste the **Signing secret** the provider shows into SwitchBoard. The email, transcript and call record all arrive this way.
    - **Questions**: add these as data collection fields on your agent, spelled exactly as shown.
-3. Under **What we will tell your agent**, tick the caller details to send with each call, such as the caller's name. Each one is a choice, because those details leave your SwitchBoard. The agent only uses them if its prompt or greeting refers to them by the name shown, for example *Hi {{sip_sb_caller_name}}, thanks for calling*.
+   - **What we will tell your agent**: tick the caller details to send with each call, such as the caller's name. Each one is a choice, because those details leave your SwitchBoard. The agent only uses them if its prompt or greeting refers to them by the name shown, for example *Hi {{sip_sb_caller_name}}, thanks for calling*.
 
 ## Choose what the agent collects
 
@@ -138,12 +145,14 @@ Changing an agent's extension does not update the routes, queues and menus that 
 
 Every user can open **Calls > AI Agent Calls**. Each call shows the caller, the time, whether all required answers were collected (**Incomplete** when not), the answers and the transcript, with the agent's and caller's lines marked. Choose an agent to see only its calls. Calls of a deleted agent stay listed, labelled **Deleted**.
 
-The agent's name also appears in the **Agent** column of [Call Records](/docs/switchboard/call_records/), and in its CSV export. A call that went to the agent's fallback is not named after the agent.
+From 1.21.0, the agent's name also appears in the **Agent** column of [Call Records](/docs/switchboard/call_records/), and in its CSV export. A call that went to the agent's fallback is not named after the agent.
 
 On an agent's page, the provider settings choose what is saved on the call record. These apply to every agent on that provider:
 
-- **Transcript**: the provider's transcript, which costs nothing, or SwitchBoard transcribes the recording with your own transcription engine.
-- **Summary** and **Answers**: the provider's, or SwitchBoard's from your AI engines. SwitchBoard's answers need automatic answer extraction to be on, and the email then waits up to 10 minutes for them.
+- **Transcript**: the provider's transcript, which costs nothing, with SwitchBoard transcribing the recording when there is none, or always SwitchBoard's. SwitchBoard only transcribes while automatic transcription is on, and uses your own transcription engine.
+- **Summary** and **Answers** (ElevenLabs agents): ElevenLabs', or SwitchBoard's from your AI engines. SwitchBoard's answers need automatic answer extraction to be on, and the email then waits up to 10 minutes for them.
+
+GPT-Live agents always use SwitchBoard's answers, and no summary is written from the transcript they save.
 
 ## Delete an agent
 
@@ -151,6 +160,7 @@ Open the agent and click **Delete**.
 
 - **Refused while anything still sends calls to it.** The dialog lists each inbound route, queue, menu or other setting that does, with a link. Send them somewhere else first.
 - **An agent set up for you at ElevenLabs** is also removed there: the agent, its phone number and its webhook. Nothing else in the account is touched. If ElevenLabs refuses, the agent is kept and you can **Try again**, or **Delete here anyway** and remove what is left in ElevenLabs yourself.
+- **An OpenAI GPT-Live agent**: the webhook that tells SwitchBoard when a call arrives is removed from your OpenAI project along with the last agent that uses it. Other agents on the same key keep it. If OpenAI refuses, the same **Try again** and **Delete here anyway** choices apply.
 - **A connected agent** is only removed from SwitchBoard. Delete it at the provider if you no longer need it.
 
 The calls it already answered stay listed under **AI Agent Calls**.
