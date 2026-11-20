@@ -1,5 +1,6 @@
 ---
 title: "Cloud Providers"
+draft: true
 ---
 
 **STARTcloud™** is able to deploy and manage applications across multiple cloud-providers. Before launching your first Instance, you need to give us access to your on-demand cloud platform provider.
