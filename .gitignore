@@ -2,14 +2,9 @@
 node_modules
 npm-debug.log
 
-# Jekyll
-_site
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-Gemfile.lock
-**/Gemfile.lock
+# Astro
+dist/
+.astro/
 
 # Temporary files
 tmp

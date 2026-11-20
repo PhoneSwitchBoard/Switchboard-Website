@@ -1,0 +1,125 @@
+/*
+ * SwitchBoard Cloud brand layer on top of Starlight.
+ * Tokens come from the switchboard:design system: cyan #24ADE3, coral #F88379,
+ * ink #2F2F41, steel #5C5A5A, Poppins with Helvetica/Arial fallback.
+ */
+
+/* Dark theme (Starlight default) */
+:root {
+  --sb-cyan: #24ade3;
+  --sb-coral: #f88379;
+  --sb-ink: #2f2f41;
+  --sb-steel: #5c5a5a;
+
+  --sl-font: 'Poppins', Helvetica, Arial, sans-serif;
+  --sl-content-width: 48rem;
+
+  --sl-color-accent-low: #0e3546;
+  --sl-color-accent: var(--sb-cyan);
+  --sl-color-accent-high: #bfe9f9;
+
+  --sl-color-white: #ffffff;
+  --sl-color-gray-1: #ececf2;
+  --sl-color-gray-2: #d2d2dc;
+  --sl-color-gray-3: #a4a4b6;
+  --sl-color-gray-4: #6f6f85;
+  --sl-color-gray-5: #46465a;
+  --sl-color-gray-6: #2f2f41;
+  --sl-color-black: #23232f;
+
+  --sb-shot-border: var(--sl-color-gray-5);
+  --sb-shot-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* Light theme */
+:root[data-theme='light'] {
+  --sl-color-accent-low: #e8f6fc;
+  --sl-color-accent: #1e94c3;
+  --sl-color-accent-high: #176e92;
+
+  --sl-color-white: var(--sb-ink);
+  --sl-color-gray-1: #3a3a4d;
+  --sl-color-gray-2: #4a4858;
+  --sl-color-gray-3: var(--sb-steel);
+  --sl-color-gray-4: #8a8896;
+  --sl-color-gray-5: #d6d6de;
+  --sl-color-gray-6: #eef0f4;
+  --sl-color-gray-7: #f7f8fa;
+  --sl-color-black: #ffffff;
+
+  --sb-shot-border: #dcdde3;
+  --sb-shot-shadow: 0 4px 14px rgba(50, 50, 93, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+/* Header: brand cyan rule, as on the marketing site */
+header.header {
+  border-bottom: 3px solid var(--sb-cyan);
+}
+.site-title {
+  font-weight: 600;
+  font-size: var(--sl-text-base);
+  color: var(--sl-color-white);
+  white-space: nowrap;
+}
+.site-title img {
+  height: 2rem;
+}
+@media (min-width: 50rem) {
+  .site-title {
+    font-size: var(--sl-text-lg);
+  }
+}
+
+/* Headings: a calmer scale than Starlight's default, so section titles don't compete with the page title */
+.sl-markdown-content :is(h1, h2, h3, h4),
+h1#_top {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+h1#_top {
+  font-size: clamp(2rem, 1.6rem + 1.5vw, 2.5rem);
+}
+.sl-markdown-content h2 {
+  font-size: 1.625rem;
+}
+.sl-markdown-content h3 {
+  font-size: 1.25rem;
+}
+
+/* Screenshots: framed, centred, never wider than the column */
+.sl-markdown-content img {
+  display: block;
+  margin-inline: auto;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--sb-shot-border);
+  border-radius: 0.5rem;
+  box-shadow: var(--sb-shot-shadow);
+}
+
+/* "Available from SwitchBoard x.y.z" badge (see src/plugins/remark-version-badge.mjs) */
+.sl-markdown-content .sb-since {
+  margin-top: 0.5rem;
+}
+.sb-since__badge {
+  display: inline-block;
+  padding: 0.125rem 0.625rem;
+  border-radius: 999px;
+  border: 1px solid var(--sl-color-accent);
+  background: var(--sl-color-accent-low);
+  color: var(--sl-color-accent-high);
+  font-size: var(--sl-text-xs);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* Blockquotes keep the brand coral rule */
+.sl-markdown-content blockquote {
+  border-inline-start-color: var(--sb-coral);
+}
+
+/* Legacy HTML tables (competitors page) scroll instead of overflowing on phones */
+.sl-markdown-content table {
+  display: block;
+  overflow-x: auto;
+}

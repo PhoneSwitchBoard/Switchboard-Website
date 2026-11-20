@@ -12,8 +12,8 @@
     "**/node_modules": true,
     "**/bower_components": true,
     "**/tmp": true,
-    "**/_site": true,
-    "**/.jekyll-cache": true
+    "**/dist": true,
+    "**/.astro": true
   },
   "editor.tabSize": 2
 }
