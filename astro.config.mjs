@@ -131,6 +131,7 @@ export default defineConfig({
             { label: 'Voicemails', slug: page('switchboard', 'voicemails') },
             { label: 'Recordings', slug: page('switchboard', 'recordings') },
             { label: 'Call Records', slug: page('switchboard', 'call_records') },
+            { label: 'Messaging', slug: page('switchboard', 'messaging') },
           ],
         },
         {
