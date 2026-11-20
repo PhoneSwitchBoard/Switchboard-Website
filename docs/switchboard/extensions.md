@@ -28,6 +28,23 @@ Go to `Settings` -> `Users & Devices` -> `Extensions`, where you will find a lis
 ![Screenshot: Extensions](./../../images/docs/extensions/extension.png)
 
 
+
+## Show the current caller after a transfer (Send PAI)
+
+When a call is transferred, the agent who stays on the call starts talking to someone new. **Switchboard Cloud™** tells that agent's phone who the new person is, so the screen shows their name and number instead of the person who placed the call.
+
+This is on by default for agent extensions. To see or change it, go to `Settings` -> `Users & Devices` -> `Extensions`, click `Edit` on the extension, and open the `Endpoint` tab. `Send PAI` sits next to `Send Rpid`.
+
+
+![Screenshot: Send PAI on the Endpoint tab](./../../images/docs/extensions/extension_endpoint_send_pai.png)
+
+
+* `Yes`: the phone is told when the other person changes. This is the recommended setting.
+* `No`: the phone keeps showing the person the call started with. Use it only for a phone that has trouble with the update.
+* `None specified`: the same as `No`.
+
+Some phones also need a setting of their own before they show the new name. See [Set Up VoIP Phones](./phone_config#show-who-you-are-talking-to-after-a-transfer).
+
 ## Create new Local Extension
 
 To create a new extension to your agent, from which you are logged in, open your account menu at the bottom of the left menu and choose `My Settings`.
