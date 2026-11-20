@@ -37,4 +37,4 @@ An inbound route can look each caller up in your **Contacts** as the call arrive
 
 ![Inbound route show contact name screenshot](/images/docs/inbound_routes/inbound_route_show_contact_name.png)
 
-This setting is available when Caller Verification is turned on for your SwitchBoard. To have it turned on, contact support.
+This setting is available when [Caller Verification](/docs/switchboard/caller_verification/) is turned on for your SwitchBoard. To have it turned on, contact support.

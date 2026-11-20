@@ -138,6 +138,7 @@ export default defineConfig({
           items: [
             { label: 'SIP Trunks', slug: page('switchboard', 'trunks') },
             { label: 'Inbound Routes', slug: page('switchboard', 'inbound_routes') },
+            { label: 'Caller Verification', slug: page('switchboard', 'caller_verification') },
             { label: 'Outbound Routes', slug: page('switchboard', 'outbound_routes') },
           ],
         },
