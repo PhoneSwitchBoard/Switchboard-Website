@@ -60,7 +60,7 @@ export default defineConfig({
     starlight({
       title: 'SwitchBoard Cloud™ Docs',
       description:
-        'How to launch, configure and use SwitchBoard Cloud™, the cloud PBX phone system by STARTcloud™.',
+        'How to configure and use SwitchBoard Cloud™, the cloud PBX phone system by STARTcloud™.',
       logo: { src: './src/assets/logo-mark.svg', alt: 'SwitchBoard Cloud' },
       // Same icon as switchboard.cloud (the Wix site), self-hosted in public/.
       favicon: '/favicon-32x32.png',
@@ -93,6 +93,25 @@ export default defineConfig({
       ],
       sidebar: [
         { label: 'Introduction', link: '/docs/' },
+        // Hidden until #4: shown only in `astro dev`, so writers can reach the draft pages.
+        ...(isBuild
+          ? []
+          : [
+              {
+                label: 'Draft: Launch an Instance',
+                items: [
+                  { label: 'Overview', slug: page('startcloud', 'before_launch') },
+                  { label: 'First Steps', slug: page('startcloud', 'first_steps') },
+                  { label: 'Cloud Providers', slug: page('startcloud', 'cloud_providers') },
+                  { label: 'SSH Keys', slug: page('startcloud', 'ssh_key') },
+                  { label: 'Integrations', slug: page('startcloud', 'integrations') },
+                  { label: 'Twilio Connect', slug: page('startcloud', 'twilio') },
+                  { label: 'Microsoft 365', slug: page('startcloud', 'microsoft') },
+                  { label: 'Launch Your Instance', slug: page('startcloud', 'launch') },
+                  { label: 'Sign In', slug: page('switchboard', 'sign_in') },
+                ],
+              },
+            ]),
         {
           label: 'Get Started',
           items: [
