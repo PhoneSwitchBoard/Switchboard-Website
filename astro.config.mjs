@@ -42,7 +42,8 @@ export default defineConfig({
       description:
         'How to launch, configure and use SwitchBoard Cloud™, the cloud PBX phone system by STARTcloud™.',
       logo: { src: './src/assets/logo-mark.svg', alt: 'SwitchBoard Cloud' },
-      favicon: '/images/favicon-32x32.svg',
+      // Same icon as switchboard.cloud (the Wix site), self-hosted in public/.
+      favicon: '/favicon-32x32.png',
       customCss: ['./src/styles/theme.css'],
       lastUpdated: true,
       pagination: true,
@@ -51,6 +52,9 @@ export default defineConfig({
         { icon: 'email', label: 'Contact', href: 'https://www.switchboard.cloud/#contact' },
       ],
       head: [
+        { tag: 'link', attrs: { rel: 'icon', href: '/favicon.ico', sizes: '48x48' } },
+        { tag: 'link', attrs: { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/icon-192.png' } },
+        { tag: 'link', attrs: { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' } },
         {
           tag: 'link',
           attrs: { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
