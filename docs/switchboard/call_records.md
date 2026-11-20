@@ -35,3 +35,28 @@ By filling out a Call Record you will have the recording of the call available f
 
 
 You will receive an email every time you fill out a Call Record, with all the feedback details included in the comments. This way, if you ever want to search for a conversation by topic, we recommend searching using your email client's filters.
+
+## Calls forwarded to an external number
+
+*Available from SwitchBoard 1.22.0.*
+
+A call that SwitchBoard sent to an [external number](./../../docs/switchboard/external_numbers), such as an answering service or a manager's mobile, is marked in the Call Records list:
+
+- the **Dir.** column shows a forward arrow instead of the inbound arrow. Hover over it to see *Inbound, forwarded to* and the number;
+- the **Agent** column shows the external number's name and phone number.
+
+<p align="center">
+  <img src="./../../images/docs/call_records/call_records_forwarded.png" />
+</p>
+
+When you open the call with `View`, the **Call Notes** window shows where it was forwarded.
+
+<p align="center">
+  <img src="./../../images/docs/call_records/call_notes_forwarded.png" />
+</p>
+
+The CSV export has a **Forwarded To** column with the same information.
+
+A call is marked only once the outside number has taken it. If the number did not answer and the call went on to its **If not reached** destination, the record shows what happened there instead.
+
+When an external number uses **Show the caller's number**, the trunk provider connects the call, so SwitchBoard cannot tell whether the outside number answered, and the call has no recording.
