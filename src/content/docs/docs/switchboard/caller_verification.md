@@ -48,7 +48,7 @@ Go to **Settings > Phone System > Caller Verification** and click **New Caller V
 
 ### PIN Entry
 
-These prompts are used only for contacts that require a PIN, and when several contacts share the caller's number. Each prompt is one of your audio files from **Settings > Audio > Audio Files**; leave it on the default to use SwitchBoard's own.
+These prompts are used only for contacts that require a PIN, and when several contacts share the caller's number. Each prompt is one of your [audio files](/docs/switchboard/music_on_hold/#upload-your-audio) from **Settings > Audio > Audio Files**; leave it on the default to use SwitchBoard's own.
 
 - **PIN Prompt**: asks for the PIN.
 - **Shared Number PIN Prompt** (1.22.0): used instead when several contacts share the number.
@@ -62,7 +62,7 @@ These prompts are used only for contacts that require a PIN, and when several co
 
 ### When Identified and When Not Identified
 
-Choose where each kind of call goes: an agent, a queue, an IVR, a voicemail box, an announcement, a call flow control, a time condition, another Caller Verification step, or an AI agent (when AI agents are switched on). Choose **Hang Up** to end the call.
+Choose where each kind of call goes: an agent, a queue, an IVR, a voicemail box, an announcement, a call flow control, a time condition, another Caller Verification step, or an [AI agent](/docs/switchboard/ai_agents/) (when AI agents are switched on). Choose **Hang Up** to end the call.
 
 Save the step. Its page lists each possible outcome and where it sends the call.
 
