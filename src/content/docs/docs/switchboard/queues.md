@@ -24,7 +24,7 @@ Administrators set up queues under `Settings` -> `Phone System` -> `Queues`. On 
 
 - **Ring Timeout** is how long each ring of the queue's agents lasts.
 - **Maximum wait (seconds)** is how long a caller waits in the queue before the **Failover Destination** takes the call. The default is 72 seconds.
-- **Failover Destination** is where the call goes when nobody in the queue answers in time, for example a voicemail box, another queue, an [external number](/docs/switchboard/external_numbers/) or an [AI agent](/docs/switchboard/ai_agents/).
+- **Failover Destination** is where the call goes when nobody in the queue answers in time, for example a voicemail box, another queue, an [external number](/docs/switchboard/external_numbers/) or an [AI agent](/docs/switchboard/ai_agents/) (when AI agents are switched on).
 
 The first ring always lasts the full Ring Timeout, even when the maximum wait is shorter. To send callers to the failover destination after about three rings, set both Ring Timeout and Maximum wait to 18.
 
