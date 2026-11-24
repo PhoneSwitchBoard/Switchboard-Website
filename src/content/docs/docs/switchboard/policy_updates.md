@@ -8,9 +8,7 @@ For a material change to the Terms of Service, we give at least 30 days' notice 
 
 ## SwitchBoard 1.23.0
 
-**Takes effect:** [EFFECTIVE DATE]
-
-<!-- TODO before merging: replace [EFFECTIVE DATE] with the date the updated Privacy Policy is published on switchboard.cloud. -->
+**Takes effect:** November 25, 2026
 
 SwitchBoard 1.23.0 adds an optional [Call Quality](/docs/switchboard/call_quality/) page that shows how well each agent's connection carried their calls. The [Privacy Policy](https://www.switchboard.cloud/privacy) now describes the data it keeps. Nothing is measured unless Call Quality is turned on for your SwitchBoard.
 
