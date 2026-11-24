@@ -12,7 +12,7 @@ The **SIP** Trunking service performs authentication via IP, so in order to use 
 
 ![Trunk concept screenshot](/images/docs/trunks/trunk_concept.png)
 
-In **Switchboard Cloud™** we create a trunk in the initial configuration of your interface, that process is transparent for you. If you want to see more details of the created trunk you can go to the Menu option `Asterisk Settings` -> `Trunks`, available only for administrator users.
+In **Switchboard Cloud™** we create a trunk in the initial configuration of your interface, that process is transparent for you. If you want to see more details of the created trunk you can go to `Settings` -> `Phone System` -> `Trunks`, available only for administrator users.
 
 ![Screenshot: Trunks](/images/docs/trunks/trunk.png)
 
@@ -21,5 +21,13 @@ Also, if you are an experienced user, there is also option to configure Advanced
 ![Screenshot: Edit Trunk](/images/docs/trunks/trunk_edit.png)
 
 ![Screenshot: Trunk Advanced Settings](/images/docs/trunks/trunk_advanced.png)
+
+## Edit a trunk
+
+*Available from SwitchBoard 1.23.0.*
+
+Open the trunk from `Settings` -> `Phone System` -> `Trunks` and click `Edit`. Saving updates only the fields on the form. Settings made elsewhere, such as the call encryption turned on by the setup wizard, stay as they were.
+
+The edit form shows each field as it is stored on the trunk, and leaves it blank when it is empty. Suggested default values are filled in only when you create a new trunk.
 
 If you want to learn more about Trunks configuration, you can use this [link](https://www.twilio.com/en-us/blog/sip-trunk-vs-sip-line).

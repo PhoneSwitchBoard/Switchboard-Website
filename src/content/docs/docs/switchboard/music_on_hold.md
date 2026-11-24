@@ -16,6 +16,10 @@ Menu names on this page are those of SwitchBoard 1.21.0 and later. In 1.19.0 and
 
 Go to **Settings > Audio > Audio Files**, click **New Audio File**, give it a **Name** and upload the file, or record it in the browser.
 
+From SwitchBoard 1.23.0, the **Name**, **Description** and **Script** are filled in once at the top of the page and shared by the **Record**, **Upload** and **Text to Speech** tabs, so switching tabs keeps what you typed. For text to speech, the Script is the text that is spoken. If a save needs a correction, such as a name that is already taken, the page comes back with everything still filled in.
+
+![The New Audio File page with the shared Name, Description and Script fields above the Record, Upload and Text to Speech tabs](/images/docs/music_on_hold/new_audio_file.png)
+
 *Available from SwitchBoard 1.21.0.*
 
 Audio files can be MP3, WAV, M4A, OGG, FLAC or another common audio format, up to 20 MB and one hour long. Every upload is converted to the format phone calls use, so there is nothing to convert first.

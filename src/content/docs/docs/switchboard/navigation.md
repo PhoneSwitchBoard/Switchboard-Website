@@ -31,7 +31,7 @@ Clicking a group name, such as **Calls**, opens its first page. Click the small 
 | Messaging | Messaging Setup |
 | AI | AI Agents, Question sets, AI Assistant, AI Providers |
 | Integrations | API Integrations, Contact Providers |
-| Live Operations | Active Calls, Conferences, Line Monitoring |
+| Live Operations | Active Calls, Conferences, Line Monitoring, [Call Quality](/docs/switchboard/call_quality/) (when turned on) |
 | System | General Settings, SIP Settings, Maintenance, Interface Config |
 
 At the top of the Settings area:
@@ -41,6 +41,14 @@ At the top of the Settings area:
 - **Recent** shows the last three settings pages you opened.
 
 ![All settings screenshot](/images/docs/navigation/all_settings.png)
+
+### Create the next item, and see what happened
+
+*Available from SwitchBoard 1.23.0.*
+
+- The details page of a queue, phone menu, trunk, time condition, time group, call flow control, audio file, music class, mailbox, Caller Verification step or AI agent has a **New** button, so you can create the next one from where you are.
+- Each save or delete is confirmed once, as a notification. Error notifications stay on screen until you close them, so a failed save isn't missed. Mistakes in a form's fields are still shown next to the field.
+- On the dashboard, an agent's **Call** button shows that the call is being placed and ignores repeated clicks, so the call is placed only once.
 
 ### Find any page: Ctrl+K
 

@@ -132,6 +132,7 @@ export default defineConfig({
             { label: 'Voicemails', slug: page('switchboard', 'voicemails') },
             { label: 'Recordings', slug: page('switchboard', 'recordings') },
             { label: 'Call Records', slug: page('switchboard', 'call_records') },
+            { label: 'Call Quality', slug: page('switchboard', 'call_quality') },
             { label: 'Messaging', slug: page('switchboard', 'messaging') },
           ],
         },
@@ -140,6 +141,7 @@ export default defineConfig({
           items: [
             { label: 'SIP Trunks', slug: page('switchboard', 'trunks') },
             { label: 'Inbound Routes', slug: page('switchboard', 'inbound_routes') },
+            { label: 'Phone Menus (IVR)', slug: page('switchboard', 'ivr') },
             { label: 'Caller Verification', slug: page('switchboard', 'caller_verification') },
             { label: 'Outbound Routes', slug: page('switchboard', 'outbound_routes') },
           ],
