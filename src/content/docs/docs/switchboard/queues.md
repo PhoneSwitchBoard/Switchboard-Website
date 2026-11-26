@@ -30,6 +30,14 @@ The first ring always lasts the full Ring Timeout, even when the maximum wait is
 
 ![Queue maximum wait screenshot](/images/docs/queues/queue_maximum_wait.png)
 
+### Send unanswered calls to an agent
+
+*Available from SwitchBoard 1.23.0.*
+
+Set **Failover Destination** to **Agent** and pick the agent. When nobody in the queue answers in time, the caller goes through that agent's Follow Me steps and, if the agent doesn't answer either, reaches the agent's voicemail. This works for outside callers and for colleagues calling the queue from their own extension.
+
+![A queue whose failover destination is an agent](/images/docs/queues/queue_failover_agent.png)
+
 ### Send unanswered calls to an outside number
 
 To send calls nobody answers to an outside number, such as an answering service, an AI receptionist or a manager's mobile, first add it as an [external number](/docs/switchboard/external_numbers/). Then, on the queue, set **Failover Destination** to **External number** and pick it from the list.

@@ -73,9 +73,31 @@ A customer may call from a mobile or a home phone that isn't on their contact. T
 - **Question Before Number Entry** (1.22.0): an optional question first, such as *If you are a registered customer, press 1*. Any other key goes to **When Not Identified**.
 - **Number Prompt**: asks for the registered number. Required, because SwitchBoard has no default for it.
 - **Entered Number PIN Prompt** (1.22.0): asks for the PIN on this path. It defaults to the PIN prompt.
+- **Invalid Entry Prompt** (1.23.0): plays after a number and PIN that don't match a contact. See [Ask again after a wrong number and PIN](#ask-again-after-a-wrong-number-and-pin).
+- **Repeat the Number Prompt after a wrong entry** (1.23.0): plays the Number Prompt again after the Invalid Entry Prompt.
 - **Country**: entered numbers are read as numbers in this country, unless the caller also enters a country code.
 
 Callers enter the number, press **#**, then enter their PIN. The PIN is always required on this path, so contacts without a PIN can't be verified this way. A wrong number and a wrong PIN get the same answer, so callers can't find out which numbers are registered. Wrong attempts from the calling phone count towards **Failed PINs per Day**; when that is left empty, a phone still gets at most 10 wrong attempts in 24 hours on this path. A correct entry doesn't reset this count: failures expire 24 hours after they happen.
+
+### Ask again after a wrong number and PIN
+
+*Available from SwitchBoard 1.23.0.*
+
+Callers aren't told whether the number or the PIN was wrong, so the retry asks for both again. Record an **Invalid Entry Prompt** that says so, for example *That number and PIN don't match our records. Please enter your phone number again, followed by the pound key*. Then:
+
+- After a wrong number and PIN, the Invalid Entry Prompt plays as the next question. Callers can start typing their number again straight away.
+- Turn on **Repeat the Number Prompt after a wrong entry** if your menu is designed to play the Number Prompt again after it.
+- After the last attempt, only the **Final Failure Prompt** plays. Without one, the Invalid Entry Prompt plays once more, so set a Final Failure Prompt too.
+
+Leave the Invalid Entry Prompt on **Same as the Invalid PIN Prompt** to keep the earlier behaviour: the Invalid PIN Prompt plays, then the Number Prompt.
+
+![The Registered Number Entry section with the Invalid Entry Prompt and the Repeat setting](/images/docs/caller_verification/invalid_entry_prompt.png)
+
+:::note
+After upgrading to 1.23.0, open and save each existing Caller Verification step once, so it uses these settings.
+:::
+
+An audio file used as an Invalid Entry Prompt can't be deleted while a step uses it.
 
 ## Leave verification by pressing 0
 
@@ -103,3 +125,5 @@ From 1.22.0, an inbound route can also show the contact's name on phones without
 ## Delete a step
 
 Open the step and click **Delete**. SwitchBoard doesn't stop you deleting a step that calls are still sent to, so first change every IVR option, route or other setting that points at it.
+
+From 1.23.0, a phone menu, time condition or call flow control can't be renamed or deleted while a Caller Verification step still sends calls to it. See [Phone Menus (IVR)](/docs/switchboard/ivr/#rename-or-delete-a-phone-menu-time-condition-or-call-flow-control).

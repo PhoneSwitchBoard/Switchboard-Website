@@ -26,7 +26,17 @@ By filling out a Call Record you will have the recording of the call available f
 
 ![Screenshot: Fill a Call Record](/images/docs/call_records/fill_call_record.png)
 
+:::note
+From SwitchBoard 1.23.0, the **Customer ID** fields (in this form, in the Call Records search and in the Customer Interaction Report) appear only on phone systems that use customer accounts. **Contact Name** works as before everywhere. To use customer accounts, contact support.
+:::
+
 You will receive an email every time you fill out a Call Record, with all the feedback details included in the comments. This way, if you ever want to search for a conversation by topic, we recommend searching using your email client's filters.
+
+## Check the quality of a call
+
+*Available from SwitchBoard 1.23.0.*
+
+When [Call Quality](/docs/switchboard/call_quality/) is turned on, administrators can open the menu next to a call's `View` button and choose `Call quality` to see how well each agent's connection carried that call.
 
 ## Calls forwarded to an external number
 

@@ -6,6 +6,26 @@ This page summarises each change to the SwitchBoard Cloud™ [Privacy Policy](ht
 
 For a material change to the Terms of Service, we give at least 30 days' notice by email or in SwitchBoard, and the change takes effect at the start of your next renewal term (on the stated date for free trials). We also tell customers before a new service provider starts handling their data.
 
+## SwitchBoard 1.23.0
+
+**Takes effect:** November 25, 2026
+
+SwitchBoard 1.23.0 adds an optional [Call Quality](/docs/switchboard/call_quality/) page that shows how well each agent's connection carried their calls. The [Privacy Policy](https://www.switchboard.cloud/privacy) now describes the data it keeps. Nothing is measured unless Call Quality is turned on for your SwitchBoard.
+
+### Privacy Policy
+
+- **What we process for you** (section 1) now includes the connection quality of calls for each of your staff: how much audio was lost, the jitter and the round trip time, and the network address their phone connected from.
+- **How long we keep data** (section 8): connection quality measurements are kept for 90 days and then deleted automatically.
+- No new service provider: the measurements stay inside your SwitchBoard instance.
+
+### Terms of Service
+
+No change.
+
+### Security Policy
+
+No change.
+
 ## SwitchBoard 1.21
 
 **Takes effect:** November 9, 2026
