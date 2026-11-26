@@ -40,7 +40,7 @@ SwitchBoard uses Twilio for phone numbers, calls and text messages.
 4. Copy the **SID** and the **Secret**. Twilio shows the secret only once.
 5. In SwitchBoard, enter your **Account SID** (from the Twilio Console home page, it starts with `AC`), the key **SID** (it starts with `SK`) and the **Secret**.
 
-SwitchBoard has not been tested with Twilio's Restricted keys, so use a Standard key.
+Twilio's Restricted keys are not supported. Use a Standard key.
 
 <a id="aws"></a>
 ### Amazon Web Services
